@@ -1,5 +1,5 @@
 ---
-name: "dash-win-signer"
+name: "jokecoin-win-signer"
 suites:
 - "bionic"
 architectures:

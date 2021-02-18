@@ -135,7 +135,7 @@ public:
 };
 
 /**
- * Dash RPC command dispatcher.
+ * Jokecoin RPC command dispatcher.
  */
 class CRPCTable
 {

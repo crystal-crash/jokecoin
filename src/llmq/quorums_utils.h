@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2019 The Dash Core developers
+// Copyright (c) 2018-2019 The Jokecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DASH_QUORUMS_UTILS_H
-#define DASH_QUORUMS_UTILS_H
+#ifndef JOKECOIN_QUORUMS_UTILS_H
+#define JOKECOIN_QUORUMS_UTILS_H
 
 #include <consensus/params.h>
 #include <net.h>
@@ -83,4 +83,4 @@ public:
 
 } // namespace llmq
 
-#endif//DASH_QUORUMS_UTILS_H
+#endif//JOKECOIN_QUORUMS_UTILS_H

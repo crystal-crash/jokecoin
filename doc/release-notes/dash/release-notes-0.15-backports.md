@@ -3,7 +3,7 @@
 - [`697d289eb`](https://github.com/clowncrew/jokecoin/commit/697d289eb) Merge #12392: Fix ignoring tx data requests when fPauseSend is set on a peer (#3225)
 - [`8c17c8163`](https://github.com/clowncrew/jokecoin/commit/8c17c8163) Remove light-hires theme as it's not required anymore
 - [`d9741fc63`](https://github.com/clowncrew/jokecoin/commit/d9741fc63) Merge #16254: qt: Set AA_EnableHighDpiScaling attribute early
-- [`df04cdcd2`](https://github.com/clowncrew/jokecoin/commit/df04cdcd2) Fix Dash specific docs and scripts
+- [`df04cdcd2`](https://github.com/clowncrew/jokecoin/commit/df04cdcd2) Fix Jokecoin specific docs and scripts
 - [`1ef70ac9e`](https://github.com/clowncrew/jokecoin/commit/1ef70ac9e) Merge #12607: depends: Remove ccache
 - [`5107582f2`](https://github.com/clowncrew/jokecoin/commit/5107582f2) Merge #11252: [P2P] When clearing addrman clear mapInfo and mapAddr. (#3171)
 - [`cf632029b`](https://github.com/clowncrew/jokecoin/commit/cf632029b) Merge #12804: [tests] Fix intermittent rpc_net.py failure.
@@ -144,7 +144,7 @@
 - [`1596b1dfa`](https://github.com/clowncrew/jokecoin/commit/1596b1dfa) Move -createwalletbackups=0 into test_node.py
 - [`4049754f4`](https://github.com/clowncrew/jokecoin/commit/4049754f4) Dashify test_node.py
 - [`96966e5b8`](https://github.com/clowncrew/jokecoin/commit/96966e5b8) Use TestNode.node_encrypt_wallet
-- [`cc124c99c`](https://github.com/clowncrew/jokecoin/commit/cc124c99c) Remove Dash specific leftovers of node.stop optimization
+- [`cc124c99c`](https://github.com/clowncrew/jokecoin/commit/cc124c99c) Remove Jokecoin specific leftovers of node.stop optimization
 - [`f55da3aa5`](https://github.com/clowncrew/jokecoin/commit/f55da3aa5) Merge #10711: [tests] Introduce TestNode
 - [`f7a679062`](https://github.com/clowncrew/jokecoin/commit/f7a679062) Merge #10854: Avoid using sizes on non-fixed-width types to derive protocol constants.
 - [`3eb0e1463`](https://github.com/clowncrew/jokecoin/commit/3eb0e1463) Fix rawtransaction.py test
@@ -199,7 +199,7 @@
 - [`c2e6a2f9c`](https://github.com/clowncrew/jokecoin/commit/c2e6a2f9c) Merge #10949: Clarify help message for -discardfee
 - [`ec366d259`](https://github.com/clowncrew/jokecoin/commit/ec366d259) Merge #10817: Redefine Dust and add a discard_rate
 - [`443b57793`](https://github.com/clowncrew/jokecoin/commit/443b57793) Merge #10784: Do not allow users to get keys from keypool without reserving them
-- [`3b7d3c90d`](https://github.com/clowncrew/jokecoin/commit/3b7d3c90d) Merge #10501: remove some unused functions -- ignoring removal of SetPort due to dash#2168
+- [`3b7d3c90d`](https://github.com/clowncrew/jokecoin/commit/3b7d3c90d) Merge #10501: remove some unused functions -- ignoring removal of SetPort due to jokecoin#2168
 - [`3e483659a`](https://github.com/clowncrew/jokecoin/commit/3e483659a) Merge #10914: Add missing lock in CScheduler::AreThreadsServicingQueue()
 - [`a80f42eab`](https://github.com/clowncrew/jokecoin/commit/a80f42eab) Still pass the disconect block index
 - [`6dce8d273`](https://github.com/clowncrew/jokecoin/commit/6dce8d273) Fix includes
@@ -218,7 +218,7 @@
 - [`f2dcac3a4`](https://github.com/clowncrew/jokecoin/commit/f2dcac3a4) Merge #10757: RPC: Introduce getblockstats to plot things (#3058)
 - [`51a4e11d6`](https://github.com/clowncrew/jokecoin/commit/51a4e11d6) dashify what made sense in fuzzing.md
 - [`b1970add1`](https://github.com/clowncrew/jokecoin/commit/b1970add1) Code Review fixes
-- [`8cadbf622`](https://github.com/clowncrew/jokecoin/commit/8cadbf622) bitcoin -> dash
+- [`8cadbf622`](https://github.com/clowncrew/jokecoin/commit/8cadbf622) bitcoin -> jokecoin
 - [`122da986c`](https://github.com/clowncrew/jokecoin/commit/122da986c) Merge #10415: [tests] Speed up fuzzing by ~200x when using afl-fuzz
 - [`2f2a6972d`](https://github.com/clowncrew/jokecoin/commit/2f2a6972d) Merge #9691: Init ECC context for test_bitcoin_fuzzy.
 - [`32dc5f1da`](https://github.com/clowncrew/jokecoin/commit/32dc5f1da) Merge #9354: Make fuzzer actually test CTxOutCompressor
@@ -236,7 +236,7 @@
 - [`c4094c8de`](https://github.com/clowncrew/jokecoin/commit/c4094c8de) Few more tiny trivial fixes
 - [`8c2c2a1ad`](https://github.com/clowncrew/jokecoin/commit/8c2c2a1ad) s/bitcoind/dashd/ in some places
 - [`76822dd50`](https://github.com/clowncrew/jokecoin/commit/76822dd50) fix imports
-- [`4bfef1daa`](https://github.com/clowncrew/jokecoin/commit/4bfef1daa) Add missing dash-specific parts
+- [`4bfef1daa`](https://github.com/clowncrew/jokecoin/commit/4bfef1daa) Add missing jokecoin-specific parts
 - [`9828b624a`](https://github.com/clowncrew/jokecoin/commit/9828b624a) `_wait_for_bitcoind_start` should be a part of BitcoinTestFramework
 - [`d0288fba5`](https://github.com/clowncrew/jokecoin/commit/d0288fba5) Refactor/fix mocktime usage in tests
 - [`9c8365ee6`](https://github.com/clowncrew/jokecoin/commit/9c8365ee6) Fix GetMinimumFee changes
@@ -302,14 +302,14 @@
 - [`6fb74ead6`](https://github.com/clowncrew/jokecoin/commit/6fb74ead6) Merge #10832: init: Factor out AppInitLockDataDirectory and fix startup core dump issue
 - [`d97fd1ca7`](https://github.com/clowncrew/jokecoin/commit/d97fd1ca7) state that getinfo will be deprecated in a future version
 - [`d6633b5fb`](https://github.com/clowncrew/jokecoin/commit/d6633b5fb) apply rpcconsole.cpp patch
-- [`4a22fb78f`](https://github.com/clowncrew/jokecoin/commit/4a22fb78f) s/dash-util-test.py/bitcoin-util-test.py
+- [`4a22fb78f`](https://github.com/clowncrew/jokecoin/commit/4a22fb78f) s/jokecoin-util-test.py/bitcoin-util-test.py
 - [`e0424c1a0`](https://github.com/clowncrew/jokecoin/commit/e0424c1a0) s/libbitcoin/libdash
 - [`316fa1859`](https://github.com/clowncrew/jokecoin/commit/316fa1859) s/bitcoind/dashd
 - [`f38ed3c71`](https://github.com/clowncrew/jokecoin/commit/f38ed3c71) #10821 continued
 - [`64c195a03`](https://github.com/clowncrew/jokecoin/commit/64c195a03) remove witness/segwit based text
 - [`c84636a47`](https://github.com/clowncrew/jokecoin/commit/c84636a47) update commented time estimates for fees
 - [`6ce278f56`](https://github.com/clowncrew/jokecoin/commit/6ce278f56) s/149900/140100
-- [`c34ec30b6`](https://github.com/clowncrew/jokecoin/commit/c34ec30b6) s/bitcoin/dash
+- [`c34ec30b6`](https://github.com/clowncrew/jokecoin/commit/c34ec30b6) s/bitcoin/jokecoin
 - [`83af2d8d5`](https://github.com/clowncrew/jokecoin/commit/83af2d8d5) remove redundant wait_node
 - [`ae1beffe0`](https://github.com/clowncrew/jokecoin/commit/ae1beffe0) remove boost list_of
 - [`d76cd903e`](https://github.com/clowncrew/jokecoin/commit/d76cd903e) Merge #10419: [trivial] Fix three recently introduced typos
@@ -346,7 +346,7 @@
 - [`7e4318dda`](https://github.com/clowncrew/jokecoin/commit/7e4318dda) Merge bitcoin#8329: Consensus: MOVEONLY: Move functions for tx verification (#3030)
 - [`a4f046cd0`](https://github.com/clowncrew/jokecoin/commit/a4f046cd0) adjust formatting from review configure.ac
 - [`0eae9ed90`](https://github.com/clowncrew/jokecoin/commit/0eae9ed90) remove witness comment/text
-- [`2b9216e98`](https://github.com/clowncrew/jokecoin/commit/2b9216e98) /s/BTC/DASH
+- [`2b9216e98`](https://github.com/clowncrew/jokecoin/commit/2b9216e98) /s/BTC/JOKECOIN
 - [`188f4a752`](https://github.com/clowncrew/jokecoin/commit/188f4a752) Merge #10735: Avoid static analyzer warnings regarding uninitialized arguments
 - [`c097ab84d`](https://github.com/clowncrew/jokecoin/commit/c097ab84d) Merge #10840: Remove duplicate include
 - [`d7057d429`](https://github.com/clowncrew/jokecoin/commit/d7057d429) Merge #10766: Building Environment: Set ARFLAGS to cr
@@ -411,7 +411,7 @@
 - [`43c952d2e`](https://github.com/clowncrew/jokecoin/commit/43c952d2e) Merge #10632: qa: Add stopatheight test
 - [`d46aff536`](https://github.com/clowncrew/jokecoin/commit/d46aff536) Merge #10536: Remove unreachable or otherwise redundant code
 - [`6489e678c`](https://github.com/clowncrew/jokecoin/commit/6489e678c) Merge #10759: Fix multi_rpc test for hosts that dont default to utf8
-- [`722c373f5`](https://github.com/clowncrew/jokecoin/commit/722c373f5) bitcoin -> dash
+- [`722c373f5`](https://github.com/clowncrew/jokecoin/commit/722c373f5) bitcoin -> jokecoin
 - [`eb1b61b36`](https://github.com/clowncrew/jokecoin/commit/eb1b61b36) fix indents
 - [`7802c82e3`](https://github.com/clowncrew/jokecoin/commit/7802c82e3) Merge #10533: [tests] Use cookie auth instead of rpcuser and rpcpassword
 - [`ed24dbba7`](https://github.com/clowncrew/jokecoin/commit/ed24dbba7) remove Boost_Reverse_foreach
@@ -448,7 +448,7 @@
 - [`6a0f56578`](https://github.com/clowncrew/jokecoin/commit/6a0f56578) Merge #10560: Remove unused constants
 - [`2bfa37472`](https://github.com/clowncrew/jokecoin/commit/2bfa37472) Merge #10569: Fix stopatheight
 - [`f6400a871`](https://github.com/clowncrew/jokecoin/commit/f6400a871) Merge #10521: Limit variable scope
-- [`e9b389d19`](https://github.com/clowncrew/jokecoin/commit/e9b389d19) continued, dash code
+- [`e9b389d19`](https://github.com/clowncrew/jokecoin/commit/e9b389d19) continued, jokecoin code
 - [`b92d2dd66`](https://github.com/clowncrew/jokecoin/commit/b92d2dd66) Merge #10545: Use list initialization (C++11) for maps/vectors instead of boost::assign::map_list_of/list_of
 - [`7e7c3ce6c`](https://github.com/clowncrew/jokecoin/commit/7e7c3ce6c) Merge #10548: Use std::unordered_{map,set} (C++11) instead of boost::unordered_{map,set}
 - [`b6dc579be`](https://github.com/clowncrew/jokecoin/commit/b6dc579be) Merge #10547: [tests] Use FastRandomContext instead of boost::random::{mt19937,uniform_int_distribution}
@@ -465,7 +465,7 @@
 - [`493f4336a`](https://github.com/clowncrew/jokecoin/commit/493f4336a) fix tx rate
 - [`de33753f0`](https://github.com/clowncrew/jokecoin/commit/de33753f0) Revert "Merge #10376: [tests] fix disconnect_ban intermittency"
 - [`b791821c8`](https://github.com/clowncrew/jokecoin/commit/b791821c8) start_node -> self.start_node
-- [`3c96b2526`](https://github.com/clowncrew/jokecoin/commit/3c96b2526) stop_node(s) -> self.stop_node(s) in dash specific tests
+- [`3c96b2526`](https://github.com/clowncrew/jokecoin/commit/3c96b2526) stop_node(s) -> self.stop_node(s) in jokecoin specific tests
 - [`46dd6a357`](https://github.com/clowncrew/jokecoin/commit/46dd6a357) make mainnetDefaultPort static
 - [`a685391c7`](https://github.com/clowncrew/jokecoin/commit/a685391c7) fix AvailableCoins Calls
 - [`1bbe050fe`](https://github.com/clowncrew/jokecoin/commit/1bbe050fe) adjust check || -> &&
@@ -499,7 +499,7 @@
 - [`5d5171f47`](https://github.com/clowncrew/jokecoin/commit/5d5171f47) remove unused gArgs wrappers
 - [`6bfbe6053`](https://github.com/clowncrew/jokecoin/commit/6bfbe6053) Scripted diff `find src/ -name "*.cpp" ! -wholename "src/util.h" ! -wholename "src/util.cpp" | xargs perl -i -pe 's/(?<!\.)(ParseParameters|ReadConfigFile|IsArgSet|(Soft|Force)?(Get|Set)(|Bool|)Arg(s)?)\(/gArgs.\1(/g'` based on bb81e1735575e1c00e808326735168cc9810c174
 - [`1bb4b9c08`](https://github.com/clowncrew/jokecoin/commit/1bb4b9c08) fix gargs change regarding devnets
-- [`bb370afbf`](https://github.com/clowncrew/jokecoin/commit/bb370afbf) s/bitcoin/dash
+- [`bb370afbf`](https://github.com/clowncrew/jokecoin/commit/bb370afbf) s/bitcoin/jokecoin
 - [`2ab30b846`](https://github.com/clowncrew/jokecoin/commit/2ab30b846) Merge #10475: [RPC] getmempoolinfo mempoolminfee is a BTC/KB feerate
 - [`89e033085`](https://github.com/clowncrew/jokecoin/commit/89e033085) Merge #10447: Make bitcoind invalid argument error message specific
 - [`785420b83`](https://github.com/clowncrew/jokecoin/commit/785420b83) Merge #10467: add SeedNodes to CConnman::Options
@@ -553,12 +553,12 @@
 - [`23114cdb2`](https://github.com/clowncrew/jokecoin/commit/23114cdb2) Drop redirect_stderr and pass stderr instead
 - [`badfdb451`](https://github.com/clowncrew/jokecoin/commit/badfdb451) Fix rpc param names
 - [`3dcbb2e59`](https://github.com/clowncrew/jokecoin/commit/3dcbb2e59) fix bip68-112-113-p2p.py
-- [`867d3449a`](https://github.com/clowncrew/jokecoin/commit/867d3449a) adjust networkhashps test for dash block time
+- [`867d3449a`](https://github.com/clowncrew/jokecoin/commit/867d3449a) adjust networkhashps test for jokecoin block time
 - [`3b3132539`](https://github.com/clowncrew/jokecoin/commit/3b3132539) update python tests
 - [`577a4ce4b`](https://github.com/clowncrew/jokecoin/commit/577a4ce4b) use uint64_t
 - [`5df0a96f7`](https://github.com/clowncrew/jokecoin/commit/5df0a96f7) adjust build_src.sh 10189
 - [`d523ed81e`](https://github.com/clowncrew/jokecoin/commit/d523ed81e) drop segwit 10318
-- [`823f858f4`](https://github.com/clowncrew/jokecoin/commit/823f858f4) apply concepts in 10198 to dash specific tests
+- [`823f858f4`](https://github.com/clowncrew/jokecoin/commit/823f858f4) apply concepts in 10198 to jokecoin specific tests
 - [`65d0fbf3c`](https://github.com/clowncrew/jokecoin/commit/65d0fbf3c) Merge #10253: [test] Add test for getnetworkhashps
 - [`4b376794c`](https://github.com/clowncrew/jokecoin/commit/4b376794c) use uint64 for flags
 - [`b9e10fb42`](https://github.com/clowncrew/jokecoin/commit/b9e10fb42) use new string method
@@ -659,7 +659,7 @@
 - [`9b8a750c9`](https://github.com/clowncrew/jokecoin/commit/9b8a750c9) More `boost::filesystem`->`fs` and some related cleanup
 - [`250195185`](https://github.com/clowncrew/jokecoin/commit/250195185) Adjust CDSNotificationInterface to align with CValidationInterface changes
 - [`d180061b8`](https://github.com/clowncrew/jokecoin/commit/d180061b8) Pass block index via BlockDisconnected
-- [`282d1554d`](https://github.com/clowncrew/jokecoin/commit/282d1554d) adjust examples/dash.conf
+- [`282d1554d`](https://github.com/clowncrew/jokecoin/commit/282d1554d) adjust examples/jokecoin.conf
 - [`e451325d6`](https://github.com/clowncrew/jokecoin/commit/e451325d6) Merge #10186: Remove SYNC_TRANSACTION_NOT_IN_BLOCK magic number
 - [`60438257a`](https://github.com/clowncrew/jokecoin/commit/60438257a) Merge #9725: CValidationInterface Cleanups
 - [`f893ac66c`](https://github.com/clowncrew/jokecoin/commit/f893ac66c) Merge #10124: [test] Suppress test logging spam
@@ -703,7 +703,7 @@
 - [`f2e976a05`](https://github.com/clowncrew/jokecoin/commit/f2e976a05) Merge #10045: [trivial] Fix typos in comments
 - [`2c833eff3`](https://github.com/clowncrew/jokecoin/commit/2c833eff3) Merge #10039: Fix compile errors with Qt 5.3.2 and Boost 1.55.0
 - [`a6eee07f2`](https://github.com/clowncrew/jokecoin/commit/a6eee07f2) Merge bitcoin#9963: util: Properly handle errors during log message formatting (#2917)
-- [`67c735b15`](https://github.com/clowncrew/jokecoin/commit/67c735b15) s/bitcoin-config.h/dash-config.h/
+- [`67c735b15`](https://github.com/clowncrew/jokecoin/commit/67c735b15) s/bitcoin-config.h/jokecoin-config.h/
 - [`2f63322cd`](https://github.com/clowncrew/jokecoin/commit/2f63322cd) dashify "Finding reviewers" section to be more relevant
 - [`e7a21faa2`](https://github.com/clowncrew/jokecoin/commit/e7a21faa2) Merge Bitcoin#9960: Trivial: Add const modifier to GetHDChain and IsHDEnabled
 - [`eecc72436`](https://github.com/clowncrew/jokecoin/commit/eecc72436) Merge #10564: Return early in IsBanned.

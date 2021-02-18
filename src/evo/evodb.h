@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The Dash Core developers
+// Copyright (c) 2018-2020 The Jokecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DASH_EVODB_H
-#define DASH_EVODB_H
+#ifndef JOKECOIN_EVODB_H
+#define JOKECOIN_EVODB_H
 
 #include <dbwrapper.h>
 #include <sync.h>
@@ -110,4 +110,4 @@ private:
 
 extern std::unique_ptr<CEvoDB> evoDb;
 
-#endif //DASH_EVODB_H
+#endif //JOKECOIN_EVODB_H

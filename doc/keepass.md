@@ -12,11 +12,11 @@ The implementation is dependent on the following:
 
 ### A note about security
 
-Every connection to KeePassHTTP server is done via plain HTTP and even though protocol uses some internal encryption it should not be considered to be a highly secure one. This protocol has certain flaw which allow an attacker to decrypt your passwords when they manage to intercept communication between a KeePassHTTP server over a network connection (see [here](https://github.com/pfn/keepasshttp/issues/258) and [here](https://github.com/keepassxreboot/keepassxc/issues/147)). Dash Core therefore strictly limits communication between itself and KeePassHttp to your local computer. As long as your computer is not compromised, your wallet passphrase is as safe as if you would enter it directly.
+Every connection to KeePassHTTP server is done via plain HTTP and even though protocol uses some internal encryption it should not be considered to be a highly secure one. This protocol has certain flaw which allow an attacker to decrypt your passwords when they manage to intercept communication between a KeePassHTTP server over a network connection (see [here](https://github.com/pfn/keepasshttp/issues/258) and [here](https://github.com/keepassxreboot/keepassxc/issues/147)). Jokecoin Core therefore strictly limits communication between itself and KeePassHttp to your local computer. As long as your computer is not compromised, your wallet passphrase is as safe as if you would enter it directly.
 
 ### What's new
 
-The following new options are available for dashd and dash-qt:
+The following new options are available for dashd and jokecoin-qt:
  - _-keepass_ Use KeePass 2 integration using KeePassHttp plugin (default: 0)
  - _-keepassport=_ Connect to KeePassHttp on port (default: 19455)
  - _-keepasskey=_ KeePassHttp key for AES encrypted communication with KeePass
@@ -36,7 +36,7 @@ Sample initialization flow from _dash-qt_ console (this needs to be done only on
  - Have KeePass running with an open database
  - Start _dash-qt_
  - Open console
- - Type "_keepass init_" in dash-qt console
+ - Type "_keepass init_" in jokecoin-qt console
  - Keepass pops up and asks for an association id, fill that in, for example, "_mydrkwallet_"
  - You should get a response like this "_Association successful. Id: mydrkwalletdash - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
  - Edit _dash.conf_ and fill in these values
@@ -55,4 +55,4 @@ At this point, the association is made. The next action depends on your particul
 
 At this point, the passphrase is stored in KeePassHttp. When Unlocking the wallet, one can use _keepass_ as the passphrase to trigger retrieval of the password. This works from the RPC commands as well as the GUI.
 
-Extended guide with screenshots is also available: https://www.dash.org/forum/threads/keepass-integration.3620/
+Extended guide with screenshots is also available: https://www.jokecoin.org/forum/threads/keepass-integration.3620/

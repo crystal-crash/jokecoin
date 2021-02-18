@@ -5,9 +5,9 @@ SRCDIR=${SRCDIR:-$TOPDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
 BITCOIND=${BITCOIND:-$SRCDIR/dashd}
-BITCOINCLI=${BITCOINCLI:-$SRCDIR/dash-cli}
-BITCOINTX=${BITCOINTX:-$SRCDIR/dash-tx}
-BITCOINQT=${BITCOINQT:-$SRCDIR/qt/dash-qt}
+BITCOINCLI=${BITCOINCLI:-$SRCDIR/jokecoin-cli}
+BITCOINTX=${BITCOINTX:-$SRCDIR/jokecoin-tx}
+BITCOINQT=${BITCOINQT:-$SRCDIR/qt/jokecoin-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 
@@ -16,7 +16,7 @@ BTCVER=($($BITCOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
 # This gets autodetected fine for dashd if --version-string is not set,
-# but has different outcomes for dash-qt and dash-cli.
+# but has different outcomes for jokecoin-qt and jokecoin-cli.
 echo "[COPYRIGHT]" > footer.h2m
 $BITCOIND --version | sed -n '1!p' >> footer.h2m
 

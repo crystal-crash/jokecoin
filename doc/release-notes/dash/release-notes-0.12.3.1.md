@@ -1,9 +1,9 @@
-Dash Core version 0.12.3.1
+Jokecoin Core version 0.12.3.1
 ==========================
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.jokecoin.org/downloads/#wallets>
 
 This is a new major version release, bringing new features, various bugfixes and other
 improvements.
@@ -21,15 +21,15 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
-dashd/dash-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Jokecoin-Qt (on Mac) or
+dashd/jokecoin-qt (on Linux).
 
 Downgrade warning
 -----------------
 
 ### Downgrade to a version < 0.12.2.2
 
-Because release 0.12.2.2 included the [per-UTXO fix](release-notes/dash/release-notes-0.12.2.2.md#per-utxo-fix)
+Because release 0.12.2.2 included the [per-UTXO fix](release-notes/jokecoin/release-notes-0.12.2.2.md#per-utxo-fix)
 which changed the structure of the internal database, you will have to reindex
 the database if you decide to use any pre-0.12.2.2 version.
 
@@ -64,7 +64,7 @@ If a node connects to the wrong network, it will immediately be disconnected.
 New format of network message signatures
 ----------------------------------------
 
-We introduced a new signature format for Dash-specific network messages,
+We introduced a new signature format for Jokecoin-specific network messages,
 read more [here](https://github.com/clowncrew/jokecoin/pull/1936) and [here](https://github.com/clowncrew/jokecoin/pull/1937).
 We also introduced a new spork `SPORK_6_NEW_SIGS` which is going to be used to activate the new format after the network has finished the upgrade.
 Note that old pre-12.3 nodes won't be able to recognize and verify new signatures after `SPORK_6_NEW_SIGS` activates.
@@ -110,7 +110,7 @@ Support for pruned nodes in Lite Mode
 -------------------------------------
 
 It is now possible to run a pruned node which stores only some recent blocks and not the whole blockchain.
-However this option is only available in so called Lite Mode. In this mode, Dash specific features are disabled, meaning
+However this option is only available in so called Lite Mode. In this mode, Jokecoin specific features are disabled, meaning
 that such nodes won't fully validate the blockchain (masternode payments and superblocks).
 PrivateSend and InstantSend functions are also disabled on such nodes. Such nodes are comparable to SPV-like nodes
 in terms of security and validation - it relies a lot on surrounding nodes, so please keep this in mind if you decide to
@@ -129,7 +129,7 @@ There are a few changes in existing RPC interfaces in this release:
 - `gobject count`, `masternode count` and `masternode list` will now by default return JSON formatted output;
 If you rely on the old output format, you can still specify an additional parameter for backwards compatibility (`all` for `count` and `status` for `list`);
 - `masternodelist` has a few new modes: `daemon`, `json`, `sentinel`;
-- `debug` rpc now requires categories to be separated via `+`, not `,` like before (e.g. `dash+net`);
+- `debug` rpc now requires categories to be separated via `+`, not `,` like before (e.g. `jokecoin+net`);
 - `getchaintips` now shows the block fork occurred in `forkpoint` field;
 - `getrawmempool`'s has InstantSend-related info (`instantsend` and `instantlock`);
 - `getgovernanceinfo` has new field `sentinelpingmaxseconds`;
@@ -148,7 +148,7 @@ Command-line options
 --------------------
 
 New cmd-line options:
-- introduced in Dash Core 0.12.3.1: `allowprivatenet`, `bip9params`, `sporkaddr`, `devnet`;
+- introduced in Jokecoin Core 0.12.3.1: `allowprivatenet`, `bip9params`, `sporkaddr`, `devnet`;
 - backported from Bitcoin Core 0.13/0.14: `blockreconstructionextratxn`, `maxtimeadjustment`, `maxtipage`,
 `incrementalrelayfee`, `dustrelayfee`, `blockmintxfee`.
 
@@ -160,7 +160,7 @@ New Masternode Information Dialog
 You can now double-click on your masternode in `My Masternodes` list on `Masternodes` tab to reveal the new
 Masternode Information dialog. It will show you some basic information as well as software versions reported by the
 masternode. There is also a QR code now which encodes corresponding masternode private key (the one you set with
-mnprivkey during MN setup and NOT the one that controls the 1000 DASH collateral) which should make the process of pairing with
+mnprivkey during MN setup and NOT the one that controls the 1000 JOKECOIN collateral) which should make the process of pairing with
 mobile software allowing you to vote with your masternode a bit easier (this software is still in development).
 
 Testnet fixes
@@ -175,7 +175,7 @@ case of future ASIC uses on testnet.
 Using masternode lists for initial peers discovery
 --------------------------------------------------
 
-We now use a recent masternode list to feed the hardcoded seed nodes list in Dash Core. This list was previously
+We now use a recent masternode list to feed the hardcoded seed nodes list in Jokecoin Core. This list was previously
 unmaintained as we fully relied on DNS based discovery on startup. DNS discovery is still used as the main discovery
 method, but the hardcoded seed list should now be able to serve as a proper backup in case DNS fails for some reason.
 
@@ -199,7 +199,7 @@ You can read more about all changes in Bitcoin Core 0.13 and 0.14 in following d
 - [release-notes-0.14.2.md](https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-0.14.2.md).
 
 Note that some features were already backported earlier (per-UTXO fix, -assumevalid, GUI overlay etc.) and some were not backported at all
-(SegWit and feefilter, you can read more about why we did so [here](https://blog.dash.org/segwit-lighting-rbf-in-dash-9536868ca861) and [here](https://github.com/clowncrew/jokecoin/pull/2025)).
+(SegWit and feefilter, you can read more about why we did so [here](https://blog.jokecoin.org/segwit-lighting-rbf-in-jokecoin-9536868ca861) and [here](https://github.com/clowncrew/jokecoin/pull/2025)).
 The alert system was also kept in place for now. We are going to continue backporting the most notable fixes and improvements from Bitcoin Core versions 0.15 and 0.16 in future releases.
 
 A lot of refactoring, code cleanups and other small fixes were done in this release again. We are going to continue making code more reliable and easier to review in future releases as well.
@@ -268,7 +268,7 @@ See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.
 - [`a648d6eff`](https://github.com/clowncrew/jokecoin/commit/a648d6eff) Drop delayed headers logic and fix duplicate initial headers sync by handling block inv correctly (#2032)
 - [`99085c5b6`](https://github.com/clowncrew/jokecoin/commit/99085c5b6) swap devnet magic bytes around (#2028)
 - [`a37dbd6d2`](https://github.com/clowncrew/jokecoin/commit/a37dbd6d2) Fix netfulfilledman usage (#2033)
-- [`08033ffe4`](https://github.com/clowncrew/jokecoin/commit/08033ffe4) Reject Dash-specific messages from obsolete peers (#1983)
+- [`08033ffe4`](https://github.com/clowncrew/jokecoin/commit/08033ffe4) Reject Jokecoin-specific messages from obsolete peers (#1983)
 - [`43671a39d`](https://github.com/clowncrew/jokecoin/commit/43671a39d) Deprecate nMnCount in mnget (#1942)
 - [`451f7f071`](https://github.com/clowncrew/jokecoin/commit/451f7f071) Fix issues with mnp, mnw and dsq signatures via new spork (SPORK_6_NEW_SIGS) (#1936)
 - [`048062641`](https://github.com/clowncrew/jokecoin/commit/048062641) Force masternodes to have listen=1 and maxconnections to be at least DEFAULT_MAX_PEER_CONNECTIONS (#1935)
@@ -280,10 +280,10 @@ See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.
 - [`8f2c1998d`](https://github.com/clowncrew/jokecoin/commit/8f2c1998d) Rename vBlockHashesFromINV to vDelayedGetHeaders (#1909)
 - [`4719ec477`](https://github.com/clowncrew/jokecoin/commit/4719ec477) Remove some locking in net.h/net.cpp (#1905)
 - [`a6ba82ac9`](https://github.com/clowncrew/jokecoin/commit/a6ba82ac9) Use masternode list to generate hardcoded seeds (#1892)
-- [`1b1a440f4`](https://github.com/clowncrew/jokecoin/commit/1b1a440f4) Do not send dash-specific requests to masternodes before we are fully connected (#1882)
+- [`1b1a440f4`](https://github.com/clowncrew/jokecoin/commit/1b1a440f4) Do not send jokecoin-specific requests to masternodes before we are fully connected (#1882)
 - [`1ca270ed8`](https://github.com/clowncrew/jokecoin/commit/1ca270ed8) No need for msgMakerInitProto for sporks because we loop by fully connected nodes only now (#1877)
 - [`b84afb251`](https://github.com/clowncrew/jokecoin/commit/b84afb251) Allow to filter for fully connected nodes when calling CopyNodeVector (#1864)
-- [`532b9fa3d`](https://github.com/clowncrew/jokecoin/commit/532b9fa3d) Use OpenNetworkConnection instead of calling ConnectNode directly in Dash code (#1857)
+- [`532b9fa3d`](https://github.com/clowncrew/jokecoin/commit/532b9fa3d) Use OpenNetworkConnection instead of calling ConnectNode directly in Jokecoin code (#1857)
 - [`3aad9d908`](https://github.com/clowncrew/jokecoin/commit/3aad9d908) Fix logging in PushInventory (#1847)
 - [`81fb931fb`](https://github.com/clowncrew/jokecoin/commit/81fb931fb) Don't delay GETHEADERS when no blocks have arrived yet in devnet (#1807)
 
@@ -377,7 +377,7 @@ See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.
 - [`1264a5577`](https://github.com/clowncrew/jokecoin/commit/1264a5577) Fix spork signature check for new nodes after SPORK_6_NEW_SIGS is switched to ON (#2060)
 - [`41680f4d9`](https://github.com/clowncrew/jokecoin/commit/41680f4d9) small cleanup in a few places (#2058)
 - [`741b94875`](https://github.com/clowncrew/jokecoin/commit/741b94875) Translations201804 (#2012)
-- [`8e24b087b`](https://github.com/clowncrew/jokecoin/commit/8e24b087b) replace boost iterators in dash-specific code (#2048)
+- [`8e24b087b`](https://github.com/clowncrew/jokecoin/commit/8e24b087b) replace boost iterators in jokecoin-specific code (#2048)
 - [`7719b7ec2`](https://github.com/clowncrew/jokecoin/commit/7719b7ec2) Update BIP147 deployment times, nMinimumChainWork and defaultAssumeValid (#2030)
 - [`b07503f01`](https://github.com/clowncrew/jokecoin/commit/b07503f01) Some cleanup (mostly trivial) (#2038)
 - [`f8e5c5d56`](https://github.com/clowncrew/jokecoin/commit/f8e5c5d56) Simplify spork defaults by using a map (#2037)
@@ -411,7 +411,7 @@ See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.
 - [`e23f61822`](https://github.com/clowncrew/jokecoin/commit/e23f61822) Make TrafficGraphDataTests more general (#1943)
 - [`5b1c4d8a1`](https://github.com/clowncrew/jokecoin/commit/5b1c4d8a1) Few (mostly trivial) cleanups and fixes (#1940)
 - [`99273f63a`](https://github.com/clowncrew/jokecoin/commit/99273f63a) Use SPORK_6_NEW_SIGS to switch from signing string messages to hashes (#1937)
-- [`c65613350`](https://github.com/clowncrew/jokecoin/commit/c65613350) Switch masternode id in Dash data structures from CTxIn to COutPoint (#1933)
+- [`c65613350`](https://github.com/clowncrew/jokecoin/commit/c65613350) Switch masternode id in Jokecoin data structures from CTxIn to COutPoint (#1933)
 - [`2ea6f7d82`](https://github.com/clowncrew/jokecoin/commit/2ea6f7d82) Use `override` keyword for overriden class member functions (#1644)
 - [`d5ef77ba9`](https://github.com/clowncrew/jokecoin/commit/d5ef77ba9) Refactor: use constant refs and `Ret` suffix (#1928)
 - [`2e04864b2`](https://github.com/clowncrew/jokecoin/commit/2e04864b2) Replace boost::lexical_cast<int> with atoi (#1926)
@@ -419,7 +419,7 @@ See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.
 - [`4528c735f`](https://github.com/clowncrew/jokecoin/commit/4528c735f) Replace some instantsend/privatesend magic numbers with constants (#1924)
 - [`120893c63`](https://github.com/clowncrew/jokecoin/commit/120893c63) Update timeLastMempoolReq when responding to MEMPOOL request (#1904)
 - [`bb20b4e7b`](https://github.com/clowncrew/jokecoin/commit/bb20b4e7b) Few cleanups after backporting (#1903)
-- [`a7fa07a30`](https://github.com/clowncrew/jokecoin/commit/a7fa07a30) Drop BOOST_FOREACH and use references in loops (const ref where applicable, Dash code only) (#1899)
+- [`a7fa07a30`](https://github.com/clowncrew/jokecoin/commit/a7fa07a30) Drop BOOST_FOREACH and use references in loops (const ref where applicable, Jokecoin code only) (#1899)
 - [`e0b6988a4`](https://github.com/clowncrew/jokecoin/commit/e0b6988a4) Various fixes and refactoring for Cache*Map classes (#1896)
 - [`99b2789a7`](https://github.com/clowncrew/jokecoin/commit/99b2789a7) Fix DeserializeAndCheckBlockTest benchmark and store hashDevnetGenesisBlock in `consensus` (#1888)
 - [`88646bd0d`](https://github.com/clowncrew/jokecoin/commit/88646bd0d) Rename `fMasterNode` to `fMasternodeMode` to clarify its meaning and to avoid confusion with `CNode::fMasternode` (#1874)
@@ -436,7 +436,7 @@ See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.
 - [`ebbd26a05`](https://github.com/clowncrew/jokecoin/commit/ebbd26a05) Drop IsInputAssociatedWithPubkey and optimize CheckOutpoint (#1783)
 
 ### Backports and related fixes:
-- See commit list [here](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.3-backports.md)
+- See commit list [here](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.3-backports.md)
 
 
 Credits
@@ -461,13 +461,13 @@ Thanks to everyone who directly contributed to this release:
 
 As well as Bitcoin Core Developers and everyone who submitted issues,
 reviewed pull requests or helped translating on
-[Transifex](https://www.transifex.com/projects/p/dash/).
+[Transifex](https://www.transifex.com/projects/p/jokecoin/).
 
 
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Jokecoin was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -478,23 +478,23 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Dash Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Dash.
+Jokecoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+Darkcoin was rebranded to Jokecoin.
 
-Dash Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+Jokecoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Dash Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+Jokecoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 
-- [v0.12.2.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.2.3.md) released Jan/12/2018
-- [v0.12.2.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.2.2.md) released Dec/17/2017
-- [v0.12.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.2.md) released Nov/08/2017
-- [v0.12.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.1.md) released Feb/06/2017
-- [v0.12.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.0.md) released Jun/15/2015
-- [v0.11.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.11.2.md) released Mar/04/2015
-- [v0.11.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.11.1.md) released Feb/10/2015
-- [v0.11.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.11.0.md) released Jan/15/2015
-- [v0.10.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.10.0.md) released Sep/25/2014
-- [v0.9.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.9.0.md) released Mar/13/2014
+- [v0.12.2.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.2.3.md) released Jan/12/2018
+- [v0.12.2.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.2.2.md) released Dec/17/2017
+- [v0.12.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.2.md) released Nov/08/2017
+- [v0.12.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.1.md) released Feb/06/2017
+- [v0.12.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.0.md) released Jun/15/2015
+- [v0.11.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.11.2.md) released Mar/04/2015
+- [v0.11.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.11.1.md) released Feb/10/2015
+- [v0.11.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.11.0.md) released Jan/15/2015
+- [v0.10.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.10.0.md) released Sep/25/2014
+- [v0.9.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.9.0.md) released Mar/13/2014
 

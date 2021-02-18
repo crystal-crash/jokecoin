@@ -1,9 +1,9 @@
-Dash Core version 0.12.2
+Jokecoin Core version 0.12.2
 ========================
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.jokecoin.org/downloads/#wallets>
 
 This is a new major version release, bringing new features and other improvements.
 
@@ -19,8 +19,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
-dashd/dash-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Jokecoin-Qt (on Mac) or
+dashd/jokecoin-qt (on Linux).
 
 Downgrade warning
 -----------------
@@ -39,7 +39,7 @@ Notable changes
 DIP0001
 -------
 
-We outline an initial scaling mechanism for Dash. After deployment and activation, Dash will be able to handle double the transactions it can currently handle. Together with the faster block times, Dash we will be prepared to handle eight times the traffic of Bitcoin.
+We outline an initial scaling mechanism for Jokecoin. After deployment and activation, Jokecoin will be able to handle double the transactions it can currently handle. Together with the faster block times, Jokecoin we will be prepared to handle eight times the traffic of Bitcoin.
 
 https://github.com/clowncrew/dips/blob/master/dip-0001.md
 
@@ -47,7 +47,7 @@ https://github.com/clowncrew/dips/blob/master/dip-0001.md
 Fee reduction
 -------------
 
-All transaction fees are reduced 10x (from 10K per Kb to 1K per Kb), including fees for InstantSend (from 0.001 DASH per input to 0.0001 per input)
+All transaction fees are reduced 10x (from 10K per Kb to 1K per Kb), including fees for InstantSend (from 0.001 JOKECOIN per input to 0.0001 per input)
 
 InstantSend fix
 ---------------
@@ -106,7 +106,7 @@ Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...
 
 ### Backports:
 - [`ff30aed68`](https://github.com/clowncrew/jokecoin/commit/ff30aed68) Align with btc 0.12 (#1409)
-- [`9901cf433`](https://github.com/clowncrew/jokecoin/commit/9901cf433) Fix for dash-qt issue with startup and multiple monitors. (#1461)
+- [`9901cf433`](https://github.com/clowncrew/jokecoin/commit/9901cf433) Fix for jokecoin-qt issue with startup and multiple monitors. (#1461)
 - [`39750439b`](https://github.com/clowncrew/jokecoin/commit/39750439b) Force to use C++11 mode for compilation (#1463)
 - [`e30faab6f`](https://github.com/clowncrew/jokecoin/commit/e30faab6f) Make strWalletFile const (#1459)
 - [`c4fe22900`](https://github.com/clowncrew/jokecoin/commit/c4fe22900) Access WorkQueue::running only within the cs lock. (#1460)
@@ -128,7 +128,7 @@ Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...
 - [`a443d4e2d`](https://github.com/clowncrew/jokecoin/commit/a443d4e2d) Backport Bitcoin PRs #6589, #7180 and remaining part of #7181: enable per-command byte counters in `CNode` (#1496)
 - [`f9730cb2e`](https://github.com/clowncrew/jokecoin/commit/f9730cb2e) Increase test coverage for addrman and addrinfo (#1497)
 - [`a12491448`](https://github.com/clowncrew/jokecoin/commit/a12491448) Eliminate unnecessary call to CheckBlock (#1498)
-- [`b0843c397`](https://github.com/clowncrew/jokecoin/commit/b0843c397) Backport Bincoin PR#7348: MOVE ONLY: move rpc* to rpc/ + same for Dash-specific rpc (#1502)
+- [`b0843c397`](https://github.com/clowncrew/jokecoin/commit/b0843c397) Backport Bincoin PR#7348: MOVE ONLY: move rpc* to rpc/ + same for Jokecoin-specific rpc (#1502)
 - [`f65017cfe`](https://github.com/clowncrew/jokecoin/commit/f65017cfe) Backport Bitcoin PR#7349: Build against system UniValue when available (#1503)
 - [`ac6c3c900`](https://github.com/clowncrew/jokecoin/commit/ac6c3c900) Backport Bitcoin PR#7350: Banlist updates (#1505)
 - [`d787fe4ab`](https://github.com/clowncrew/jokecoin/commit/d787fe4ab) Backport Bitcoin PR#7458: [Net] peers.dat, banlist.dat recreated when missing (#1506)
@@ -239,7 +239,7 @@ Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...
 - [`8da26da71`](https://github.com/clowncrew/jokecoin/commit/8da26da71) Eliminate g_connman use in spork module. (#1613)
 - [`4956ba7a7`](https://github.com/clowncrew/jokecoin/commit/4956ba7a7) Eliminate g_connman use in instantx module. (#1626)
 - [`10eddb52d`](https://github.com/clowncrew/jokecoin/commit/10eddb52d) Move some (spamy) CMasternodeSync log messages to new `mnsync` log category (#1630)
-- [`753b1e486`](https://github.com/clowncrew/jokecoin/commit/753b1e486) Eliminate remaining uses of g_connman in Dash-specific code. (#1635)
+- [`753b1e486`](https://github.com/clowncrew/jokecoin/commit/753b1e486) Eliminate remaining uses of g_connman in Jokecoin-specific code. (#1635)
 - [`8949f4345`](https://github.com/clowncrew/jokecoin/commit/8949f4345) Wait for full sync in functional tests that use getblocktemplate. (#1642)
 - [`5f0da8aa7`](https://github.com/clowncrew/jokecoin/commit/5f0da8aa7) fix sync (#1643)
 - [`7a8910443`](https://github.com/clowncrew/jokecoin/commit/7a8910443) Fix unlocked access to vNodes.size() (#1654)
@@ -253,7 +253,7 @@ Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...
 - [`5758ae1bf`](https://github.com/clowncrew/jokecoin/commit/5758ae1bf) Full path in "failed to load cache" warnings (#1411)
 - [`18c83f58e`](https://github.com/clowncrew/jokecoin/commit/18c83f58e) Qt: bug fixes and enhancement to traffic graph widget  (#1429)
 - [`72fbfe93d`](https://github.com/clowncrew/jokecoin/commit/72fbfe93d) Icon Cutoff Fix (#1485)
-- [`4df8a20f9`](https://github.com/clowncrew/jokecoin/commit/4df8a20f9) Fix windows installer script, should handle `dash:` uri correctly now (#1550)
+- [`4df8a20f9`](https://github.com/clowncrew/jokecoin/commit/4df8a20f9) Fix windows installer script, should handle `jokecoin:` uri correctly now (#1550)
 - [`8b7dffbb6`](https://github.com/clowncrew/jokecoin/commit/8b7dffbb6) Update startup shortcuts (#1551)
 - [`6ff7b7aa5`](https://github.com/clowncrew/jokecoin/commit/6ff7b7aa5) fix TrafficGraphData bandwidth calculation (#1618)
 - [`026ad8421`](https://github.com/clowncrew/jokecoin/commit/026ad8421) Fix empty tooltip during sync under specific conditions (#1637)
@@ -276,7 +276,7 @@ Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...
 - [`b6804678f`](https://github.com/clowncrew/jokecoin/commit/b6804678f) Minor Warning Fixed (#1482)
 - [`cd76f2a15`](https://github.com/clowncrew/jokecoin/commit/cd76f2a15) Disable HD wallet by default (#1629)
 - [`8f850c60f`](https://github.com/clowncrew/jokecoin/commit/8f850c60f) Lower tx fees 10x (#1632)
-- [`7ab175a8e`](https://github.com/clowncrew/jokecoin/commit/7ab175a8e) Ensure Dash wallets < 0.12.2 can't open HD wallets (#1638)
+- [`7ab175a8e`](https://github.com/clowncrew/jokecoin/commit/7ab175a8e) Ensure Jokecoin wallets < 0.12.2 can't open HD wallets (#1638)
 - [`7efa5e79d`](https://github.com/clowncrew/jokecoin/commit/7efa5e79d) fix fallback fee (#1649)
 
 ### RPC:
@@ -374,13 +374,13 @@ Thanks to everyone who directly contributed to this release:
 - UdjinM6
 - Will Wray
 
-As well as Bitcoin Core Developers and everyone that submitted issues or helped translating on [Transifex](https://www.transifex.com/projects/p/dash/).
+As well as Bitcoin Core Developers and everyone that submitted issues or helped translating on [Transifex](https://www.transifex.com/projects/p/jokecoin/).
 
 
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Jokecoin was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -391,20 +391,20 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Dash Core tree 0.11.x was a fork of Bitcoin Core tree 0.9, Darkcoin was rebranded
-to Dash.
+Jokecoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9, Darkcoin was rebranded
+to Jokecoin.
 
-Dash Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+Jokecoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Dash Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+Jokecoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old changelogs can be found here:
 
-- [v0.12.1](release-notes/dash/release-notes-0.12.1.md) released ???/??/2016
-- [v0.12.0](release-notes/dash/release-notes-0.12.0.md) released ???/??/2015
-- [v0.11.2](release-notes/dash/release-notes-0.11.2.md) released Mar/25/2015
-- [v0.11.1](release-notes/dash/release-notes-0.11.1.md) released Feb/10/2015
-- [v0.11.0](release-notes/dash/release-notes-0.11.0.md) released Jan/15/2015
-- [v0.10.x](release-notes/dash/release-notes-0.10.0.md) released Sep/25/2014
-- [v0.9.x](release-notes/dash/release-notes-0.9.0.md) released Mar/13/2014
+- [v0.12.1](release-notes/jokecoin/release-notes-0.12.1.md) released ???/??/2016
+- [v0.12.0](release-notes/jokecoin/release-notes-0.12.0.md) released ???/??/2015
+- [v0.11.2](release-notes/jokecoin/release-notes-0.11.2.md) released Mar/25/2015
+- [v0.11.1](release-notes/jokecoin/release-notes-0.11.1.md) released Feb/10/2015
+- [v0.11.0](release-notes/jokecoin/release-notes-0.11.0.md) released Jan/15/2015
+- [v0.10.x](release-notes/jokecoin/release-notes-0.10.0.md) released Sep/25/2014
+- [v0.9.x](release-notes/jokecoin/release-notes-0.9.0.md) released Mar/13/2014
 

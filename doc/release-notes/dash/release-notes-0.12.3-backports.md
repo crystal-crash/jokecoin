@@ -49,9 +49,9 @@
 - [`8ee652f4c`](https://github.com/clowncrew/jokecoin/commit/8ee652f4c) Merge #10851: depends: fix fontconfig with newer glibc
 - [`9a26b427f`](https://github.com/clowncrew/jokecoin/commit/9a26b427f) Don't set PKG_CONFIG_SYSROOT_DIR env variable to build Qt.
 - [`0e6672bf7`](https://github.com/clowncrew/jokecoin/commit/0e6672bf7) Merge pull request #1879 from codablock/pr_backport_bitcoin_0.14-11
-- [`c8e5c40ec`](https://github.com/clowncrew/jokecoin/commit/c8e5c40ec) Replace more example Dash addresses with invalid addresses
+- [`c8e5c40ec`](https://github.com/clowncrew/jokecoin/commit/c8e5c40ec) Replace more example Jokecoin addresses with invalid addresses
 - [`7e4e4ea27`](https://github.com/clowncrew/jokecoin/commit/7e4e4ea27) Give 1000 bytes instead of 4000 bytes before the block is full
-- [`873bd6c80`](https://github.com/clowncrew/jokecoin/commit/873bd6c80) Fix new dash-tx tests
+- [`873bd6c80`](https://github.com/clowncrew/jokecoin/commit/873bd6c80) Fix new jokecoin-tx tests
 - [`4959ff201`](https://github.com/clowncrew/jokecoin/commit/4959ff201) Fix formatting of help in sendfrom
 - [`a4430b624`](https://github.com/clowncrew/jokecoin/commit/a4430b624) Fix rpc tests
 - [`5901531bc`](https://github.com/clowncrew/jokecoin/commit/5901531bc) Use constant 7200 instead of TIMESTAMP_WINDOW for now
@@ -155,13 +155,13 @@
 - [`25074aeb4`](https://github.com/clowncrew/jokecoin/commit/25074aeb4) Merge #9644: [refactor] Remove using namespace <xxx> from src/
 - [`daa8582b1`](https://github.com/clowncrew/jokecoin/commit/daa8582b1) Merge #9615: Wallet incremental fee
 - [`b97eecc05`](https://github.com/clowncrew/jokecoin/commit/b97eecc05) Fix review nits
-- [`ec8176960`](https://github.com/clowncrew/jokecoin/commit/ec8176960) Remove segwit related dash-tx tests
+- [`ec8176960`](https://github.com/clowncrew/jokecoin/commit/ec8176960) Remove segwit related jokecoin-tx tests
 - [`4d651621e`](https://github.com/clowncrew/jokecoin/commit/4d651621e) Update mainnet chainparams to use correct heights for BIP34/BIP65/BIP66
 - [`3824192e4`](https://github.com/clowncrew/jokecoin/commit/3824192e4) Update testnet chainparams to use correct heights for BIP34/BIP65/BIP66
 - [`715be73c6`](https://github.com/clowncrew/jokecoin/commit/715be73c6) Fix listsinceblock.py
 - [`9bc404a8c`](https://github.com/clowncrew/jokecoin/commit/9bc404a8c) Add "setbip69enabled" RPC usable by tests only
 - [`6bee150e8`](https://github.com/clowncrew/jokecoin/commit/6bee150e8) Require timestamps for importmulti keys
-- [`611cb6f27`](https://github.com/clowncrew/jokecoin/commit/611cb6f27) Fix new dash-tx tests
+- [`611cb6f27`](https://github.com/clowncrew/jokecoin/commit/611cb6f27) Fix new jokecoin-tx tests
 - [`86753a890`](https://github.com/clowncrew/jokecoin/commit/86753a890) Add spaces around + in updateGlobalFeeVariables
 - [`228d774a6`](https://github.com/clowncrew/jokecoin/commit/228d774a6) Fix use of distdir and docker build dir
 - [`771c56a79`](https://github.com/clowncrew/jokecoin/commit/771c56a79) Fix new bitcoin-util-tests
@@ -202,7 +202,7 @@
 - [`4408b2d14`](https://github.com/clowncrew/jokecoin/commit/4408b2d14) Merge #9222: Add 'subtractFeeFromAmount' option to 'fundrawtransaction'.
 - [`5b763faba`](https://github.com/clowncrew/jokecoin/commit/5b763faba) Merge #9468: [Depends] Dependency updates for 0.14.0
 - [`74bfe0b22`](https://github.com/clowncrew/jokecoin/commit/74bfe0b22) Merge #9261: Add unstored orphans with rejected parents to recentRejects
-- [`53820de3e`](https://github.com/clowncrew/jokecoin/commit/53820de3e) Remove SegWit related code in dash-tx
+- [`53820de3e`](https://github.com/clowncrew/jokecoin/commit/53820de3e) Remove SegWit related code in jokecoin-tx
 - [`a0d089eda`](https://github.com/clowncrew/jokecoin/commit/a0d089eda) Merge #8883: Add all standard TXO types to bitcoin-tx
 - [`658479355`](https://github.com/clowncrew/jokecoin/commit/658479355) Merge #9472: Disentangle progress estimation from checkpoints and update it
 - [`cee8cf1be`](https://github.com/clowncrew/jokecoin/commit/cee8cf1be) Merge #9518: Return height of last block pruned by pruneblockchain RPC
@@ -222,7 +222,7 @@
 - [`8e9bae954`](https://github.com/clowncrew/jokecoin/commit/8e9bae954) Merge pull request #1858 from codablock/pr_backport_bitcoin_0.14-8
 - [`e5daae291`](https://github.com/clowncrew/jokecoin/commit/e5daae291) Dashify "linearize" README.md and switch the tool to mainnet
 - [`2e02b167e`](https://github.com/clowncrew/jokecoin/commit/2e02b167e) Move wallet backup dir check to wallet.cpp
-- [`ec8a9e0a6`](https://github.com/clowncrew/jokecoin/commit/ec8a9e0a6) Add missing Dash specific parameters back in help strings
+- [`ec8a9e0a6`](https://github.com/clowncrew/jokecoin/commit/ec8a9e0a6) Add missing Jokecoin specific parameters back in help strings
 - [`b3ee3fc35`](https://github.com/clowncrew/jokecoin/commit/b3ee3fc35) Dashify example config and help strings
 - [`6ab9e6b90`](https://github.com/clowncrew/jokecoin/commit/6ab9e6b90) Add missing colons to Result/Example help strings
 - [`5371ff4ef`](https://github.com/clowncrew/jokecoin/commit/5371ff4ef) Disable contrib/rpm dist
@@ -338,7 +338,7 @@
 - [`f831710f4`](https://github.com/clowncrew/jokecoin/commit/f831710f4) Merge #9139: Change sync_blocks to pick smarter maxheight (on top of #9196)
 - [`b6ea01e07`](https://github.com/clowncrew/jokecoin/commit/b6ea01e07) Remove namespace alert_tests when including alert test data
 - [`7939a23e3`](https://github.com/clowncrew/jokecoin/commit/7939a23e3) Use std::move when calling MakeTransactionRef
-- [`d0a39fbcf`](https://github.com/clowncrew/jokecoin/commit/d0a39fbcf) Use "Dash Core" instead of "dash-core" in some places and Dashify
+- [`d0a39fbcf`](https://github.com/clowncrew/jokecoin/commit/d0a39fbcf) Use "Jokecoin Core" instead of "jokecoin-core" in some places and Dashify
 - [`9170c0e9c`](https://github.com/clowncrew/jokecoin/commit/9170c0e9c) Fix rpc tests
 - [`76d7730a5`](https://github.com/clowncrew/jokecoin/commit/76d7730a5) Dashify ISSUE_TEMPLATE.md
 - [`07cd44c0e`](https://github.com/clowncrew/jokecoin/commit/07cd44c0e) Use MakeTransactionRef in CreateDevNetGenesisBlock
@@ -376,7 +376,7 @@
 - [`161fa919c`](https://github.com/clowncrew/jokecoin/commit/161fa919c) Merge #9111: Remove unused variable UNLIKELY_PCT from fees.h
 - [`b64452a7a`](https://github.com/clowncrew/jokecoin/commit/b64452a7a) Revert "Check and enable -Wshadow by default."
 - [`591729051`](https://github.com/clowncrew/jokecoin/commit/591729051) Merge #8794: Enable -Wshadow by default
-- [`7765c87e7`](https://github.com/clowncrew/jokecoin/commit/7765c87e7) Remove nType and nVersion from Dash related serialization code
+- [`7765c87e7`](https://github.com/clowncrew/jokecoin/commit/7765c87e7) Remove nType and nVersion from Jokecoin related serialization code
 - [`19a2d668c`](https://github.com/clowncrew/jokecoin/commit/19a2d668c) Merge #9039: Various serialization simplifcations and optimizations
 - [`1121f2f95`](https://github.com/clowncrew/jokecoin/commit/1121f2f95) Merge #9098: [qa] Handle zombies and cluttered tmpdirs
 - [`705057f0d`](https://github.com/clowncrew/jokecoin/commit/705057f0d) Merge #9095: test: Fix test_random includes
@@ -444,7 +444,7 @@
 - [`c2e007538`](https://github.com/clowncrew/jokecoin/commit/c2e007538) Merge pull request #1849 from codablock/pr_backport_bitcoin_0.14-4
 - [`8f13e2537`](https://github.com/clowncrew/jokecoin/commit/8f13e2537) Remove doubled "./" from bitcoin-util-test.json
 - [`6989f94d6`](https://github.com/clowncrew/jokecoin/commit/6989f94d6) Get rid of InsecureRand and use equivalent FastRandomContext
-- [`5b8946cad`](https://github.com/clowncrew/jokecoin/commit/5b8946cad) Add Dash Copyright to Makefiles modified by Dash developers
+- [`5b8946cad`](https://github.com/clowncrew/jokecoin/commit/5b8946cad) Add Jokecoin Copyright to Makefiles modified by Jokecoin developers
 - [`7604a3a0e`](https://github.com/clowncrew/jokecoin/commit/7604a3a0e) Dashify INSTALL.md and build-unix.md
 - [`89e959d30`](https://github.com/clowncrew/jokecoin/commit/89e959d30) Merge #8936: Report NodeId in misbehaving debug
 - [`b84ea46ed`](https://github.com/clowncrew/jokecoin/commit/b84ea46ed) Merge #8965: Mention that PPA doesn't support Debian
@@ -551,7 +551,7 @@
 - [`85ce0ef28`](https://github.com/clowncrew/jokecoin/commit/85ce0ef28) Merge #8697: fix op order to append first alert
 - [`8efec7b06`](https://github.com/clowncrew/jokecoin/commit/8efec7b06) Fix wallet-accounts.py tests
 - [`fdd063816`](https://github.com/clowncrew/jokecoin/commit/fdd063816) Merge #8928: Fix init segfault where InitLoadWallet() calls ATMP before genesis
-- [`610470c73`](https://github.com/clowncrew/jokecoin/commit/610470c73) Remove bitcoin man pages and call gen-manpages.sh for Dash
+- [`610470c73`](https://github.com/clowncrew/jokecoin/commit/610470c73) Remove bitcoin man pages and call gen-manpages.sh for Jokecoin
 - [`f9694badb`](https://github.com/clowncrew/jokecoin/commit/f9694badb) Dashify gen-manpages.sh
 - [`5691cee8d`](https://github.com/clowncrew/jokecoin/commit/5691cee8d) Merge #8608: Install manpages via make install, also add some autogenerated manpages
 - [`85c0aabc1`](https://github.com/clowncrew/jokecoin/commit/85c0aabc1) Merge #8667: Fix SIGHASH_SINGLE bug in test_framework SignatureHash
@@ -606,7 +606,7 @@
 - [`61a3d9aeb`](https://github.com/clowncrew/jokecoin/commit/61a3d9aeb) Merge #8554: trivial: remove unused variable
 - [`39909d373`](https://github.com/clowncrew/jokecoin/commit/39909d373) Merge #8558: Add copyright header to wallet_text_fixture.cpp
 - [`e2a795fd8`](https://github.com/clowncrew/jokecoin/commit/e2a795fd8) Return EXIT_SUCCESS instead of 0 in main()
-- [`e3da73ebf`](https://github.com/clowncrew/jokecoin/commit/e3da73ebf) Update Dash related code to use new SyncTransaction notifications interface
+- [`e3da73ebf`](https://github.com/clowncrew/jokecoin/commit/e3da73ebf) Update Jokecoin related code to use new SyncTransaction notifications interface
 - [`ebc466dbd`](https://github.com/clowncrew/jokecoin/commit/ebc466dbd) Revert test_bitcoin.info to test_dash.info in Makefile.am
 - [`f8ffc55af`](https://github.com/clowncrew/jokecoin/commit/f8ffc55af) Partially cherry-pick tests refactorings found in Bitcoin SegWit PRs
 - [`8460a9b97`](https://github.com/clowncrew/jokecoin/commit/8460a9b97) Dashify translation_process.md
@@ -829,7 +829,7 @@
 - [`5d8e94a26`](https://github.com/clowncrew/jokecoin/commit/5d8e94a26) Merge #7840: Several performance and privacy improvements to inv/mempool handling
 - [`33233409a`](https://github.com/clowncrew/jokecoin/commit/33233409a) Merge #7966: http: Do a pending c++11 simplification handling work items
 - [`90b00cfc6`](https://github.com/clowncrew/jokecoin/commit/90b00cfc6) Merge #7953: Create signmessagewithprivkey rpc
-- [`233493b71`](https://github.com/clowncrew/jokecoin/commit/233493b71) Delete old "dash" registry key when installing/uninstalling
+- [`233493b71`](https://github.com/clowncrew/jokecoin/commit/233493b71) Delete old "jokecoin" registry key when installing/uninstalling
 - [`b78bd5cc7`](https://github.com/clowncrew/jokecoin/commit/b78bd5cc7) Dashify help text of fundrawtransaction
 - [`da2de0771`](https://github.com/clowncrew/jokecoin/commit/da2de0771) Put ps_rounds to the bottom of the result of listunspent
 - [`15fc7f213`](https://github.com/clowncrew/jokecoin/commit/15fc7f213) De-bump fees in miner_tests.cpp
@@ -912,7 +912,7 @@
 - [`760d58e3d`](https://github.com/clowncrew/jokecoin/commit/760d58e3d) Merge #7671: [RPC] Add generatetoaddress rpc to mine to an address
 - [`953aeead1`](https://github.com/clowncrew/jokecoin/commit/953aeead1) Merge #7710: [Depends] Bump miniupnpc and config.guess+sub
 - [`74fe8fe59`](https://github.com/clowncrew/jokecoin/commit/74fe8fe59) Merge #7649: Prevent multiple calls to CWallet::AvailableCoins
-- [`aa584522d`](https://github.com/clowncrew/jokecoin/commit/aa584522d) Dash related changes for feefilter
+- [`aa584522d`](https://github.com/clowncrew/jokecoin/commit/aa584522d) Jokecoin related changes for feefilter
 - [`11ac70af9`](https://github.com/clowncrew/jokecoin/commit/11ac70af9) Merge #7542: Implement "feefilter" P2P message
 - [`283922243`](https://github.com/clowncrew/jokecoin/commit/283922243) Merge #7726: Correct importaddress help reference to importpubkey
 - [`04bf554ab`](https://github.com/clowncrew/jokecoin/commit/04bf554ab) Merge #7712: Improve COutPoint less operator

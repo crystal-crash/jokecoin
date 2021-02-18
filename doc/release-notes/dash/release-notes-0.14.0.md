@@ -1,9 +1,9 @@
-Dash Core version 0.14.0.0
+Jokecoin Core version 0.14.0.0
 ==========================
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.jokecoin.org/downloads/#wallets>
 
 This is a new major version release, bringing new features, various bugfixes and other improvements.
 
@@ -20,8 +20,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
-dashd/dash-qt (on Linux). If you upgrade after DIP0003 activation and you were
+installer (on Windows) or just copy over /Applications/Jokecoin-Qt (on Mac) or
+dashd/jokecoin-qt (on Linux). If you upgrade after DIP0003 activation and you were
 using version < 0.13 you will have to reindex (start with -reindex-chainstate
 or -reindex) to make sure your wallet has all the new data synced. Upgrading from
 version 0.13 should not require any additional actions.
@@ -63,7 +63,7 @@ Read more: https://github.com/clowncrew/dips/blob/master/dip-0008.md
 DIP0010 - LLMQ-based InstantSend
 --------------------------------
 InstantSend is a feature to allow instant confirmations of payments. It works by locking transaction
-inputs through masternode quorums. It has been present in Dash for a few years and been proven to work.
+inputs through masternode quorums. It has been present in Jokecoin for a few years and been proven to work.
 Nevertheless, there are some limits which could theoretically be removed in the old system but doing so
 would have created risks in terms of scalability and security.
 
@@ -201,7 +201,7 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`3d993ee8f`](https://github.com/clowncrew/jokecoin/commit/3d993ee8f) Translations v14 (#2638)
 - [`fbd244dde`](https://github.com/clowncrew/jokecoin/commit/fbd244dde) Bail out in few more places when blockchain is not synced yet (#2888)
 - [`fd6aaae7f`](https://github.com/clowncrew/jokecoin/commit/fd6aaae7f) Add proTxHash to masternode list rpc response (#2887)
-- [`dd3977523`](https://github.com/clowncrew/jokecoin/commit/dd3977523) More "bench" log for Dash specific parts (#2884)
+- [`dd3977523`](https://github.com/clowncrew/jokecoin/commit/dd3977523) More "bench" log for Jokecoin specific parts (#2884)
 - [`8ffdcbf99`](https://github.com/clowncrew/jokecoin/commit/8ffdcbf99) A bunch of mostly trivial tweaks/fixes (#2889)
 - [`195100161`](https://github.com/clowncrew/jokecoin/commit/195100161) New LLMQ-based IS should have no legacy IS strings in UI and no legacy restrictions (#2883)
 - [`7f419ae7f`](https://github.com/clowncrew/jokecoin/commit/7f419ae7f) Accept non-spent LLMQ IS locked outpoints from mempool in PS mixing (#2878)
@@ -211,13 +211,13 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`19a9e2f4c`](https://github.com/clowncrew/jokecoin/commit/19a9e2f4c) Report `instantlock: true` for transactions locked via ChainLocks (#2877)
 - [`5cfceab86`](https://github.com/clowncrew/jokecoin/commit/5cfceab86) Refactor IS-lock GUI notification and implement a similar one for ChainLocks (#2875)
 - [`ed30db713`](https://github.com/clowncrew/jokecoin/commit/ed30db713) Ensure wallet is available and unlocked for some `governance` and `evo` RPCs (#2874)
-- [`0c2fdf4da`](https://github.com/clowncrew/jokecoin/commit/0c2fdf4da) Refactor some Dash/mixing-specific wallet functions (#2850)
+- [`0c2fdf4da`](https://github.com/clowncrew/jokecoin/commit/0c2fdf4da) Refactor some Jokecoin/mixing-specific wallet functions (#2850)
 - [`22ae0bc21`](https://github.com/clowncrew/jokecoin/commit/22ae0bc21) Archive islock hashes when removing confirmed islocks (#2872)
 - [`b322b4828`](https://github.com/clowncrew/jokecoin/commit/b322b4828) Wait longer until re-requesting recovered sigs and ISLOCKs from other peers (#2871)
 - [`2502aadd7`](https://github.com/clowncrew/jokecoin/commit/2502aadd7) Fix infinite loop in CDBTransactionIterator::SkipDeletedAndOverwritten (#2870)
 - [`cd94cbe6f`](https://github.com/clowncrew/jokecoin/commit/cd94cbe6f) Track which TXs are not locked yet and use this info in ProcessPendingRetryLockTxs (#2869)
 - [`c4549aca2`](https://github.com/clowncrew/jokecoin/commit/c4549aca2) Change `quorum list` behaviour to list active quorums by default (#2866)
-- [`cff9f9717`](https://github.com/clowncrew/jokecoin/commit/cff9f9717) Prefix all bls/quorum threads with `dash-` (#2865)
+- [`cff9f9717`](https://github.com/clowncrew/jokecoin/commit/cff9f9717) Prefix all bls/quorum threads with `jokecoin-` (#2865)
 - [`5e865f9c8`](https://github.com/clowncrew/jokecoin/commit/5e865f9c8) Bump mempool counter on each successful IS lock (#2864)
 - [`a67e66143`](https://github.com/clowncrew/jokecoin/commit/a67e66143) Don't disconnect peers on MNAUTH verification failure (#2868)
 - [`1d8c7226d`](https://github.com/clowncrew/jokecoin/commit/1d8c7226d) Fix race condition in sendheaders.py (#2862)
@@ -310,12 +310,12 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`4d8ef3512`](https://github.com/clowncrew/jokecoin/commit/4d8ef3512) Reset local/static cache in LogAcceptCategory when categories change (#2804)
 - [`4a79f7a70`](https://github.com/clowncrew/jokecoin/commit/4a79f7a70) Few trivial cleanups (#2803)
 - [`5057ad511`](https://github.com/clowncrew/jokecoin/commit/5057ad511) Drop DBG macros uses from governance modules (#2802)
-- [`29a9e24b4`](https://github.com/clowncrew/jokecoin/commit/29a9e24b4) Prepare Dash-related stuff before starting ThreadImport (#2800)
+- [`29a9e24b4`](https://github.com/clowncrew/jokecoin/commit/29a9e24b4) Prepare Jokecoin-related stuff before starting ThreadImport (#2800)
 - [`8f280f346`](https://github.com/clowncrew/jokecoin/commit/8f280f346) Split "llmq" debug category into "llmq", "llmq-dkg" and "llmq-sigs" (#2799)
 - [`15c720dd4`](https://github.com/clowncrew/jokecoin/commit/15c720dd4) Stop tracking interested/participating nodes and send/announce to MNAUTH peers (#2798)
 - [`f20620b0a`](https://github.com/clowncrew/jokecoin/commit/f20620b0a) Also handle MNAUTH on non-masternodes (#2797)
 - [`b18f8cb77`](https://github.com/clowncrew/jokecoin/commit/b18f8cb77) Implement MNAUTH and allow unlimited inbound MN connections (#2790)
-- [`aae985746`](https://github.com/clowncrew/jokecoin/commit/aae985746) Update log categories in help message and in decomposition of "dash" category (#2792)
+- [`aae985746`](https://github.com/clowncrew/jokecoin/commit/aae985746) Update log categories in help message and in decomposition of "jokecoin" category (#2792)
 - [`7b76e7abb`](https://github.com/clowncrew/jokecoin/commit/7b76e7abb) Implement BIP9 style deployment for DIP8/ChainLocks and fix a bug with late headers (#2793)
 - [`3ead8cd85`](https://github.com/clowncrew/jokecoin/commit/3ead8cd85) Fix potential travis failures due to network failures (#2795)
 - [`02db06658`](https://github.com/clowncrew/jokecoin/commit/02db06658) Fix loop in CLLMQUtils::GetQuorumConnections to add at least 2 connections (#2796)
@@ -356,7 +356,7 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`4ae52758b`](https://github.com/clowncrew/jokecoin/commit/4ae52758b) Remove size check in CDKGSessionManager::GetVerifiedContributions
 - [`e21da2d99`](https://github.com/clowncrew/jokecoin/commit/e21da2d99) Move simple PoSe tests into llmq-simplepose.py
 - [`6488135f4`](https://github.com/clowncrew/jokecoin/commit/6488135f4) Track index into self.nodes in mninfo
-- [`f30ea6dfd`](https://github.com/clowncrew/jokecoin/commit/f30ea6dfd) Replace BITCOIN_UNORDERED_LRU_CACHE_H with DASH_UNORDERED_LRU_CACHE_H
+- [`f30ea6dfd`](https://github.com/clowncrew/jokecoin/commit/f30ea6dfd) Replace BITCOIN_UNORDERED_LRU_CACHE_H with JOKECOIN_UNORDERED_LRU_CACHE_H
 - [`e763310b5`](https://github.com/clowncrew/jokecoin/commit/e763310b5) Add missing LOCK(cs_main)
 - [`3a5e7c433`](https://github.com/clowncrew/jokecoin/commit/3a5e7c433) Do not hold cs_vNodes in CSigSharesManager::SendMessages() for too long (#2758)
 - [`fbf0dcb08`](https://github.com/clowncrew/jokecoin/commit/fbf0dcb08) Various small cleanups (#2761)
@@ -368,7 +368,7 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`609114a80`](https://github.com/clowncrew/jokecoin/commit/609114a80) Code review: re-add string cast in mininode.py
 - [`85ffc1d64`](https://github.com/clowncrew/jokecoin/commit/85ffc1d64) drop `swap_outputs_in_rawtx` and `DecimalEncoder` in smartfees.py
 - [`bc593c84b`](https://github.com/clowncrew/jokecoin/commit/bc593c84b) Revert "Fix use of missing self.log in blockchain.py"
-- [`0e91ebcf4`](https://github.com/clowncrew/jokecoin/commit/0e91ebcf4) Use logging framework in Dash specific tests
+- [`0e91ebcf4`](https://github.com/clowncrew/jokecoin/commit/0e91ebcf4) Use logging framework in Jokecoin specific tests
 - [`dd1245c2a`](https://github.com/clowncrew/jokecoin/commit/dd1245c2a) Update dnsseed-policy.md (#2751)
 - [`f351145e6`](https://github.com/clowncrew/jokecoin/commit/f351145e6) Use GetVoteForId instead of maintaining votes on inputs
 - [`d4cf78fe2`](https://github.com/clowncrew/jokecoin/commit/d4cf78fe2) Add HasVotedOnId/GetVoteForId to CSigningManager
@@ -536,7 +536,7 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`805aeaa16`](https://github.com/clowncrew/jokecoin/commit/805aeaa16) Drop cs_main from UpdatedBlockTip in CDKGSessionManager/CDKGSessionHandler (#2655)
 - [`2a4fbb6e4`](https://github.com/clowncrew/jokecoin/commit/2a4fbb6e4) Bump block stats when adding commitment tx into block (#2654)
 - [`25cb14b61`](https://github.com/clowncrew/jokecoin/commit/25cb14b61) Fix confusion between dip3 activation and enforcement (#2651)
-- [`7caf9394e`](https://github.com/clowncrew/jokecoin/commit/7caf9394e) drop dash-docs folder and instead link to dash-docs.github.io in README (#2650)
+- [`7caf9394e`](https://github.com/clowncrew/jokecoin/commit/7caf9394e) drop jokecoin-docs folder and instead link to jokecoin-docs.github.io in README (#2650)
 - [`70a9e905c`](https://github.com/clowncrew/jokecoin/commit/70a9e905c) Use helper function to produce help text for params of `protx` rpcs (#2649)
 - [`f123248f1`](https://github.com/clowncrew/jokecoin/commit/f123248f1) update copyright (#2648)
 - [`d398bf052`](https://github.com/clowncrew/jokecoin/commit/d398bf052) reverse order from jsonRequest, strSubCommand
@@ -555,11 +555,11 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`9f211ef12`](https://github.com/clowncrew/jokecoin/commit/9f211ef12) Add listener interface to listen for recovered sigs
 - [`189cee210`](https://github.com/clowncrew/jokecoin/commit/189cee210) Don't pass poolSize to SelectQuorum and instead use consensus params
 - [`13855674d`](https://github.com/clowncrew/jokecoin/commit/13855674d) Add missing new-line character in log output
-- [`d31edf66a`](https://github.com/clowncrew/jokecoin/commit/d31edf66a) Wait for script checks to finish before messing with txes in Dash-specific way (#2652)
+- [`d31edf66a`](https://github.com/clowncrew/jokecoin/commit/d31edf66a) Wait for script checks to finish before messing with txes in Jokecoin-specific way (#2652)
 - [`2c477b0d4`](https://github.com/clowncrew/jokecoin/commit/2c477b0d4) Fix no_wallet for rpcmasternode/rpcevo
 - [`fc00b7bae`](https://github.com/clowncrew/jokecoin/commit/fc00b7bae) add import to rpcevo fixing backport 8775
 - [`30b03863e`](https://github.com/clowncrew/jokecoin/commit/30b03863e) Apply suggestions from code review #2646
-- [`c70aa6079`](https://github.com/clowncrew/jokecoin/commit/c70aa6079) change #8775 to keep dash codebase improvement, but still backport #9908
+- [`c70aa6079`](https://github.com/clowncrew/jokecoin/commit/c70aa6079) change #8775 to keep jokecoin codebase improvement, but still backport #9908
 - [`afdb0a267`](https://github.com/clowncrew/jokecoin/commit/afdb0a267) Merge #9908: Define 7200 second timestamp window constant
 - [`c094d4bbe`](https://github.com/clowncrew/jokecoin/commit/c094d4bbe) fix #8775 backport
 - [`f9147466f`](https://github.com/clowncrew/jokecoin/commit/f9147466f) remove other rpc references to pwalletMain
@@ -715,7 +715,7 @@ As well as everyone that submitted issues and reviewed pull requests.
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Jokecoin was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -726,31 +726,31 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Dash Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Dash.
+Jokecoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+Darkcoin was rebranded to Jokecoin.
 
-Dash Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+Jokecoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Dash Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+Jokecoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 
-- [v0.13.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.13.3.md) released Apr/04/2019
-- [v0.13.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.13.2.md) released Mar/15/2019
-- [v0.13.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.13.1.md) released Feb/9/2019
-- [v0.13.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.13.0.md) released Jan/14/2019
-- [v0.12.3.4](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.3.4.md) released Dec/14/2018
-- [v0.12.3.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.3.3.md) released Sep/19/2018
-- [v0.12.3.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.3.2.md) released Jul/09/2018
-- [v0.12.3.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.3.1.md) released Jul/03/2018
-- [v0.12.2.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.2.3.md) released Jan/12/2018
-- [v0.12.2.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.2.2.md) released Dec/17/2017
-- [v0.12.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.2.md) released Nov/08/2017
-- [v0.12.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.1.md) released Feb/06/2017
-- [v0.12.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.12.0.md) released Aug/15/2015
-- [v0.11.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.11.2.md) released Mar/04/2015
-- [v0.11.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.11.1.md) released Feb/10/2015
-- [v0.11.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.11.0.md) released Jan/15/2015
-- [v0.10.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.10.0.md) released Sep/25/2014
-- [v0.9.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/dash/release-notes-0.9.0.md) released Mar/13/2014
+- [v0.13.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.13.3.md) released Apr/04/2019
+- [v0.13.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.13.2.md) released Mar/15/2019
+- [v0.13.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.13.1.md) released Feb/9/2019
+- [v0.13.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.13.0.md) released Jan/14/2019
+- [v0.12.3.4](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.3.4.md) released Dec/14/2018
+- [v0.12.3.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.3.3.md) released Sep/19/2018
+- [v0.12.3.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.3.2.md) released Jul/09/2018
+- [v0.12.3.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.3.1.md) released Jul/03/2018
+- [v0.12.2.3](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.2.3.md) released Jan/12/2018
+- [v0.12.2.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.2.2.md) released Dec/17/2017
+- [v0.12.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.2.md) released Nov/08/2017
+- [v0.12.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.1.md) released Feb/06/2017
+- [v0.12.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.12.0.md) released Aug/15/2015
+- [v0.11.2](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.11.2.md) released Mar/04/2015
+- [v0.11.1](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.11.1.md) released Feb/10/2015
+- [v0.11.0](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.11.0.md) released Jan/15/2015
+- [v0.10.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.10.0.md) released Sep/25/2014
+- [v0.9.x](https://github.com/clowncrew/jokecoin/blob/master/doc/release-notes/jokecoin/release-notes-0.9.0.md) released Mar/13/2014
 

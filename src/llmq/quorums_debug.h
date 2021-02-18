@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2019 The Dash Core developers
+// Copyright (c) 2018-2019 The Jokecoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef DASH_QUORUMS_DEBUG_H
-#define DASH_QUORUMS_DEBUG_H
+#ifndef JOKECOIN_QUORUMS_DEBUG_H
+#define JOKECOIN_QUORUMS_DEBUG_H
 
 #include <consensus/params.h>
 #include <sync.h>
@@ -108,4 +108,4 @@ extern CDKGDebugManager* quorumDKGDebugManager;
 
 } // namespace llmq
 
-#endif //DASH_QUORUMS_DEBUG_H
+#endif //JOKECOIN_QUORUMS_DEBUG_H

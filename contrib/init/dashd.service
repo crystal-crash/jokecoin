@@ -5,15 +5,15 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/dash/dash.conf
+# /etc/jokecoin/jokecoin.conf
 
 [Unit]
-Description=Dash daemon
+Description=Jokecoin daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/dashd -daemon -conf=/etc/dash/dash.conf -pid=/run/dashd/dashd.pid
-# Creates /run/dash owned by dashcore
+ExecStart=/usr/bin/dashd -daemon -conf=/etc/jokecoin/jokecoin.conf -pid=/run/dashd/dashd.pid
+# Creates /run/jokecoin owned by dashcore
 RuntimeDirectory=dashd
 User=dashcore
 Type=forking

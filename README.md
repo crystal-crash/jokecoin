@@ -1,28 +1,28 @@
-Dash Core staging tree 0.16
+Jokecoin Core staging tree 0.16
 ===========================
 
-`master:` [![Build Status](https://travis-ci.org/clowncrew/dash.svg?branch=master)](https://travis-ci.org/clowncrew/dash) `develop:` [![Build Status](https://travis-ci.org/clowncrew/dash.svg?branch=develop)](https://travis-ci.org/clowncrew/dash/branches)
+`master:` [![Build Status](https://travis-ci.org/clowncrew/jokecoin.svg?branch=master)](https://travis-ci.org/clowncrew/jokecoin) `develop:` [![Build Status](https://travis-ci.org/clowncrew/jokecoin.svg?branch=develop)](https://travis-ci.org/clowncrew/jokecoin/branches)
 
-https://www.dash.org
+https://www.jokecoin.org
 
 
-What is Dash?
+What is Jokecoin?
 -------------
 
-Dash is an experimental digital currency that enables instant, private
-payments to anyone, anywhere in the world. Dash uses peer-to-peer technology
+Jokecoin is an experimental digital currency that enables instant, private
+payments to anyone, anywhere in the world. Jokecoin uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. Dash Core is the name of the open
+are carried out collectively by the network. Jokecoin Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Dash Core software, see https://www.dash.org/get-dash/.
+the Jokecoin Core software, see https://www.jokecoin.org/get-jokecoin/.
 
 
 License
 -------
 
-Dash Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Jokecoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -30,7 +30,7 @@ Development Process
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
 [Tags](https://github.com/clowncrew/jokecoin/tags) are created to indicate new official,
-stable release versions of Dash Core.
+stable release versions of Jokecoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -66,7 +66,7 @@ Translations
 ------------
 
 Changes to translations as well as new translations can be submitted to
-[Dash Core's Transifex page](https://www.transifex.com/projects/p/dash/).
+[Jokecoin Core's Transifex page](https://www.transifex.com/projects/p/jokecoin/).
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
@@ -74,4 +74,4 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also follow the [forum](https://www.dash.org/forum/topic/dash-worldwide-collaboration.88/).
+Translators should also follow the [forum](https://www.jokecoin.org/forum/topic/jokecoin-worldwide-collaboration.88/).
