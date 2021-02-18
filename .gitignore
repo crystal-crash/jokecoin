@@ -7,7 +7,7 @@ reset-files.bash
 
 *.exe
 src/jokecoin
-src/dashd
+src/jokecoind
 src/jokecoin-cli
 src/jokecoin-tx
 src/test/test_dash
@@ -128,7 +128,7 @@ qa/pull-tester/tests-config.sh
 
 #development symlinks
 jokecoin-cli
-dashd
+jokecoind
 jokecoin-qt
 make
 

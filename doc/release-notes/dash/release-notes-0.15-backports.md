@@ -234,7 +234,7 @@
 - [`cb480af01`](https://github.com/clowncrew/jokecoin/commit/cb480af01) Dashify
 - [`806da3c6e`](https://github.com/clowncrew/jokecoin/commit/806da3c6e) adjust number of parameters in sendmany
 - [`c4094c8de`](https://github.com/clowncrew/jokecoin/commit/c4094c8de) Few more tiny trivial fixes
-- [`8c2c2a1ad`](https://github.com/clowncrew/jokecoin/commit/8c2c2a1ad) s/bitcoind/dashd/ in some places
+- [`8c2c2a1ad`](https://github.com/clowncrew/jokecoin/commit/8c2c2a1ad) s/bitcoind/jokecoind/ in some places
 - [`76822dd50`](https://github.com/clowncrew/jokecoin/commit/76822dd50) fix imports
 - [`4bfef1daa`](https://github.com/clowncrew/jokecoin/commit/4bfef1daa) Add missing jokecoin-specific parts
 - [`9828b624a`](https://github.com/clowncrew/jokecoin/commit/9828b624a) `_wait_for_bitcoind_start` should be a part of BitcoinTestFramework
@@ -304,7 +304,7 @@
 - [`d6633b5fb`](https://github.com/clowncrew/jokecoin/commit/d6633b5fb) apply rpcconsole.cpp patch
 - [`4a22fb78f`](https://github.com/clowncrew/jokecoin/commit/4a22fb78f) s/jokecoin-util-test.py/bitcoin-util-test.py
 - [`e0424c1a0`](https://github.com/clowncrew/jokecoin/commit/e0424c1a0) s/libbitcoin/libdash
-- [`316fa1859`](https://github.com/clowncrew/jokecoin/commit/316fa1859) s/bitcoind/dashd
+- [`316fa1859`](https://github.com/clowncrew/jokecoin/commit/316fa1859) s/bitcoind/jokecoind
 - [`f38ed3c71`](https://github.com/clowncrew/jokecoin/commit/f38ed3c71) #10821 continued
 - [`64c195a03`](https://github.com/clowncrew/jokecoin/commit/64c195a03) remove witness/segwit based text
 - [`c84636a47`](https://github.com/clowncrew/jokecoin/commit/c84636a47) update commented time estimates for fees
@@ -474,7 +474,7 @@
 - [`9adb72e11`](https://github.com/clowncrew/jokecoin/commit/9adb72e11) remove initialize to 0 in chainparams.h
 - [`6ce3e55cb`](https://github.com/clowncrew/jokecoin/commit/6ce3e55cb) add extra params to AvailableCoins calls
 - [`6ad8fe0e9`](https://github.com/clowncrew/jokecoin/commit/6ad8fe0e9) adjust CoinType logic
-- [`d5d27ad19`](https://github.com/clowncrew/jokecoin/commit/d5d27ad19) s/bitcoind/dashd
+- [`d5d27ad19`](https://github.com/clowncrew/jokecoin/commit/d5d27ad19) s/bitcoind/jokecoind
 - [`39cfd61c0`](https://github.com/clowncrew/jokecoin/commit/39cfd61c0) Merge #9279: Consensus: Move CFeeRate out of libconsensus
 - [`535d7d6a8`](https://github.com/clowncrew/jokecoin/commit/535d7d6a8) Merge #10347: Use range-based for loops (C++11) when looping over vector elements
 - [`30ad4b8e8`](https://github.com/clowncrew/jokecoin/commit/30ad4b8e8) Merge #8952: Add query options to listunspent RPC call
@@ -591,7 +591,7 @@
 - [`22c4cd7b0`](https://github.com/clowncrew/jokecoin/commit/22c4cd7b0) Merge #10159: [tests] color test results and sort alphabetically
 - [`9c863edd9`](https://github.com/clowncrew/jokecoin/commit/9c863edd9) Merge #9780: Suppress noisy output from qa tests in Travis
 - [`98f3e295c`](https://github.com/clowncrew/jokecoin/commit/98f3e295c) add `&& llmq::IsOldInstantSendEnabled()` to instantsend max value check
-- [`a651f0d0f`](https://github.com/clowncrew/jokecoin/commit/a651f0d0f) adjust test_runner.py check if dashd is running
+- [`a651f0d0f`](https://github.com/clowncrew/jokecoin/commit/a651f0d0f) adjust test_runner.py check if jokecoind is running
 - [`74830ee2a`](https://github.com/clowncrew/jokecoin/commit/74830ee2a) adjust spork5 code in wallet.cpp
 - [`4c7b47e28`](https://github.com/clowncrew/jokecoin/commit/4c7b47e28) Resolve comment, add check for fUseInstantSend and set value equal to the max value
 - [`5152e751c`](https://github.com/clowncrew/jokecoin/commit/5152e751c) Notify UI/external scripts about wallet txes locks

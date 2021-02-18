@@ -236,7 +236,7 @@ bool Intro::pickDataDirectory()
     }
     /* Only override -datadir if different from the default, to make it possible to
      * override -datadir in the jokecoin.conf file in the default data directory
-     * (to be consistent with dashd behavior)
+     * (to be consistent with jokecoind behavior)
      */
     if(dataDir != dataDirDefaultCurrent)
         gArgs.SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

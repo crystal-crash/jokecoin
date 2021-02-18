@@ -12,7 +12,7 @@ The following are some helpful notes on how to run Jokecoin on your native platf
 Unpack the files into a directory and run:
 
 - `bin/jokecoin-qt` (GUI) or
-- `bin/dashd` (headless)
+- `bin/jokecoind` (headless)
 
 ### Windows
 

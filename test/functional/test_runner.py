@@ -243,7 +243,7 @@ def main():
         sys.exit(0)
 
     if not (enable_wallet and enable_utils and enable_bitcoind):
-        print("No functional tests to run. Wallet, utils, and dashd must all be enabled")
+        print("No functional tests to run. Wallet, utils, and jokecoind must all be enabled")
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -308,11 +308,11 @@ def main():
 def run_tests(*, test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=None, failfast=False, runs_ci):
     args = args or []
 
-    # Warn if dashd is already running (unix only)
+    # Warn if jokecoind is already running (unix only)
     try:
-        pidof_output = subprocess.check_output(["pidof", "dashd"])
+        pidof_output = subprocess.check_output(["pidof", "jokecoind"])
         if not (pidof_output is None or pidof_output == b''):
-            print("%sWARNING!%s There is already a dashd process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+            print("%sWARNING!%s There is already a jokecoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -324,7 +324,7 @@ def run_tests(*, test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_c
 
     #Set env vars
     if "BITCOIND" not in os.environ:
-        os.environ["BITCOIND"] = build_dir + '/src/dashd' + exeext
+        os.environ["BITCOIND"] = build_dir + '/src/jokecoind' + exeext
         os.environ["BITCOINCLI"] = build_dir + '/src/jokecoin-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'

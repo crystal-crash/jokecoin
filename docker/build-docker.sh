@@ -3,17 +3,17 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR/..
 
-DOCKER_IMAGE=${DOCKER_IMAGE:-clowncrew/dashd-develop}
+DOCKER_IMAGE=${DOCKER_IMAGE:-clowncrew/jokecoind-develop}
 DOCKER_TAG=${DOCKER_TAG:-latest}
 
 BUILD_DIR=${BUILD_DIR:-.}
 
 rm docker/bin/*
 mkdir docker/bin
-cp $BUILD_DIR/src/dashd docker/bin/
+cp $BUILD_DIR/src/jokecoind docker/bin/
 cp $BUILD_DIR/src/jokecoin-cli docker/bin/
 cp $BUILD_DIR/src/jokecoin-tx docker/bin/
-strip docker/bin/dashd
+strip docker/bin/jokecoind
 strip docker/bin/jokecoin-cli
 strip docker/bin/jokecoin-tx
 

@@ -10,7 +10,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between jokecoin-cli and dashd)
+ * CBaseChainParams defines the base parameters (shared between jokecoin-cli and jokecoind)
  * of a given instance of the Jokecoin system.
  */
 class CBaseChainParams

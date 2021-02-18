@@ -180,7 +180,7 @@ in-tree. Example use:
 $ valgrind --suppressions=contrib/valgrind.supp src/test/test_dash
 $ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
       --show-leak-kinds=all src/test/test_dash --log_level=test_suite
-$ valgrind -v --leak-check=full src/dashd -printtoconsole
+$ valgrind -v --leak-check=full src/jokecoind -printtoconsole
 ```
 
 **compiling for test coverage**

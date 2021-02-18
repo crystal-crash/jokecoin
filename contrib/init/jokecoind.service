@@ -1,7 +1,7 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit dashd.service
+# $ systemctl edit jokecoind.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
@@ -12,12 +12,12 @@ Description=Jokecoin daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/dashd -daemon -conf=/etc/jokecoin/jokecoin.conf -pid=/run/dashd/dashd.pid
+ExecStart=/usr/bin/jokecoind -daemon -conf=/etc/jokecoin/jokecoin.conf -pid=/run/jokecoind/jokecoind.pid
 # Creates /run/jokecoin owned by dashcore
-RuntimeDirectory=dashd
+RuntimeDirectory=jokecoind
 User=dashcore
 Type=forking
-PIDFile=/run/dashd/dashd.pid
+PIDFile=/run/jokecoind/jokecoind.pid
 Restart=on-failure
 PrivateTmp=true
 

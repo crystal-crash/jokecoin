@@ -1235,7 +1235,7 @@ UniValue addmultisigaddress(const JSONRPCRequest& request)
             "  \"address\":\"multisigaddress\",    (string) The value of the new multisig address.\n"
             "  \"redeemScript\":\"script\"         (string) The string value of the hex-encoded redemption script.\n"
             "}\n"
-            "\nResult (DEPRECATED. To see this result in v0.16 instead, please start dashd with -deprecatedrpc=addmultisigaddress).\n"
+            "\nResult (DEPRECATED. To see this result in v0.16 instead, please start jokecoind with -deprecatedrpc=addmultisigaddress).\n"
             "        clients should transition to the new output api before upgrading to v0.17.\n"
             "\"address\"                         (string) A jokecoin address associated with the keys.\n"
 
@@ -2929,7 +2929,7 @@ UniValue loadwallet(const JSONRPCRequest& request)
         throw std::runtime_error(
             "loadwallet \"filename\"\n"
             "\nLoads a wallet from a wallet file or directory."
-            "\nNote that all wallet command-line options used when starting dashd will be"
+            "\nNote that all wallet command-line options used when starting jokecoind will be"
             "\napplied to the new wallet (eg -zapwallettxes, upgradewallet, rescan, etc).\n"
             "\nArguments:\n"
             "1. \"filename\"    (string, required) The wallet directory or .dat file.\n"

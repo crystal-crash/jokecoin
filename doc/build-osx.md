@@ -33,7 +33,7 @@ Follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-Jokecoin Core is now available at `./src/dashd`
+Jokecoin Core is now available at `./src/jokecoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
@@ -41,7 +41,7 @@ Before running, it's recommended you create an RPC configuration file.
 
     chmod 600 "/Users/${USER}/Library/Application Support/DashCore/jokecoin.conf"
 
-The first time you run dashd, it will start downloading the blockchain. This process could take several hours.
+The first time you run jokecoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -50,7 +50,7 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/dashd -daemon # Starts the jokecoin daemon.
+    ./src/jokecoind -daemon # Starts the jokecoin daemon.
     ./src/jokecoin-cli --help # Outputs a list of command-line options.
     ./src/jokecoin-cli help # Outputs a list of RPC commands when the daemon is running.
 

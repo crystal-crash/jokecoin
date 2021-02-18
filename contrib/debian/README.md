@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package dashd/jokecoin-qt
-for Debian-based Linux systems. If you compile dashd/jokecoin-qt yourself, there are some useful files here.
+This directory contains files used to package jokecoind/jokecoin-qt
+for Debian-based Linux systems. If you compile jokecoind/jokecoin-qt yourself, there are some useful files here.
 
 ## jokecoin: URI support ##
 

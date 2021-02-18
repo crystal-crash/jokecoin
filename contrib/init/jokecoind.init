@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  dashd The Jokecoin Core server.
+#  jokecoind The Jokecoin Core server.
 #
 #
 # chkconfig: 345 80 20
-# description: dashd
-# processname: dashd
+# description: jokecoind
+# processname: jokecoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/dashd, see below
-if [ -f /etc/sysconfig/dashd ]; then
-        . /etc/sysconfig/dashd
+# you can override defaults in /etc/sysconfig/jokecoind, see below
+if [ -f /etc/sysconfig/jokecoind ]; then
+        . /etc/sysconfig/jokecoind
 fi
 
 RETVAL=0
 
-prog=dashd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/dashd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/dashd}
+prog=jokecoind
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/jokecoind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/jokecoind}
 
-# dashd defaults to /usr/bin/dashd, override with BITCOIND_BIN
-dashd=${BITCOIND_BIN-/usr/bin/dashd}
+# jokecoind defaults to /usr/bin/jokecoind, override with BITCOIND_BIN
+jokecoind=${BITCOIND_BIN-/usr/bin/jokecoind}
 
-# dashd opts default to -disablewallet, override with BITCOIND_OPTS
+# jokecoind opts default to -disablewallet, override with BITCOIND_OPTS
 dashd_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $dashd $dashd_opts
+    daemon $DAEMONOPTS $jokecoind $dashd_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile
