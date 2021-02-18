@@ -315,7 +315,7 @@ Clone the git repositories for Dash Core and Gitian.
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/clowncrew/jokecoin
-git clone https://github.com/dashpay/gitian.sigs.git
+git clone https://github.com/clowncrew/gitian.sigs.git
 ```
 
 Setting up the Gitian image
@@ -489,6 +489,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[dash/gitian.sigs](https://github.com/dashpay/gitian.sigs/) repository, or if that's not possible to create a pull
+[dash/gitian.sigs](https://github.com/clowncrew/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.

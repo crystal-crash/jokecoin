@@ -208,7 +208,7 @@ A lot of refactoring, code cleanups and other small fixes were done in this rele
 0.12.3.1 Change log
 ===================
 
-See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.3...dashpay:v0.12.3.1) below.
+See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.3...clowncrew:v0.12.3.1) below.
 
 ### Governance:
 - [`6c79c348e`](https://github.com/clowncrew/jokecoin/commit/6c79c348e) Drop "MAY, 2018" clause for proposal validation on mainnet (#2101)
@@ -428,7 +428,7 @@ See detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.2.
 - [`83957f2d3`](https://github.com/clowncrew/jokecoin/commit/83957f2d3) Fix alertTests.raw.h (again) (#1869)
 - [`c13afaad8`](https://github.com/clowncrew/jokecoin/commit/c13afaad8) Fix alertTests.raw.h generation (#1868)
 - [`a46bf120b`](https://github.com/clowncrew/jokecoin/commit/a46bf120b) Don't directly call "wine test_dash.exe" and let "make check" handle it (#1841)
-- [`e805f790e`](https://github.com/clowncrew/jokecoin/commit/e805f790e) Automatically build and push docker image to docker.io/dashpay/dashd-develop (#1809)
+- [`e805f790e`](https://github.com/clowncrew/jokecoin/commit/e805f790e) Automatically build and push docker image to docker.io/clowncrew/dashd-develop (#1809)
 - [`d9058aa04`](https://github.com/clowncrew/jokecoin/commit/d9058aa04) Increase travis timeout for "wine src/test/test_dash.exe" call (#1820)
 - [`10786fe8e`](https://github.com/clowncrew/jokecoin/commit/10786fe8e) Use travis_wait for "wine test_dash.exe" call to fix timeouts (#1812)
 - [`4bce3bf8b`](https://github.com/clowncrew/jokecoin/commit/4bce3bf8b) Fix crash on exit when -createwalletbackups=0 (#1810)

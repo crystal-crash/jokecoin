@@ -73,7 +73,7 @@ in some rare cases otherwise);
  0.13.1.0 Change log
 ===================
 
-See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.13.0.0...dashpay:v0.13.1.0).
+See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.13.0.0...clowncrew:v0.13.1.0).
 
 ### Backports
 

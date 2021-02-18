@@ -23,7 +23,7 @@ def setup():
             exit(1)
     subprocess.check_call(['sudo', 'apt-get', 'install', '-qq'] + programs)
     if not os.path.isdir('gitian.sigs'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/dashpay/gitian.sigs.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/clowncrew/gitian.sigs.git'])
     if not os.path.isdir('dash-detached-sigs'):
         subprocess.check_call(['git', 'clone', 'https://github.com/clowncrew/jokecoin-detached-sigs.git'])
     if not os.path.isdir('gitian-builder'):

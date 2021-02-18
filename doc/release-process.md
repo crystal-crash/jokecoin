@@ -31,7 +31,7 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 Check out the source code in the following directory hierarchy.
 
 	cd /path/to/your/toplevel/build
-	git clone https://github.com/dashpay/gitian.sigs.git
+	git clone https://github.com/clowncrew/gitian.sigs.git
 	git clone https://github.com/clowncrew/jokecoin-detached-sigs.git
 	git clone https://github.com/devrandom/gitian-builder.git
 	git clone https://github.com/clowncrew/jokecoin.git
@@ -265,7 +265,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Release on Dash forum: https://www.dash.org/forum/topic/official-announcements.54/
 
-  - Optionally Discord, twitter, reddit /r/Dashpay, ... but this will usually sort out itself
+  - Optionally Discord, twitter, reddit /r/Clowncrew, ... but this will usually sort out itself
 
   - Notify flare so that he can start building [the PPAs](https://launchpad.net/~dash.org/+archive/ubuntu/dash)
 

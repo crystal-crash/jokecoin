@@ -4,7 +4,7 @@
 
 Dash Core version 0.12.0 is now available from:
 
-  https://dashpay.io/downloads
+  https://clowncrew.io/downloads
 
 Please report bugs using the issue tracker at github:
 

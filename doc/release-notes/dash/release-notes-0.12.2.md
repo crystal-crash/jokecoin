@@ -41,7 +41,7 @@ DIP0001
 
 We outline an initial scaling mechanism for Dash. After deployment and activation, Dash will be able to handle double the transactions it can currently handle. Together with the faster block times, Dash we will be prepared to handle eight times the traffic of Bitcoin.
 
-https://github.com/dashpay/dips/blob/master/dip-0001.md
+https://github.com/clowncrew/dips/blob/master/dip-0001.md
 
 
 Fee reduction
@@ -102,7 +102,7 @@ This release includes experimental implementation of BIP39/BIP44 compatible HD w
 0.12.2 Change log
 =================
 
-Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...dashpay:v0.12.2.x) below.
+Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...clowncrew:v0.12.2.x) below.
 
 ### Backports:
 - [`ff30aed68`](https://github.com/clowncrew/jokecoin/commit/ff30aed68) Align with btc 0.12 (#1409)
@@ -315,7 +315,7 @@ Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...
 ### Other (technical) commits:
 - [`1a528d945`](https://github.com/clowncrew/jokecoin/commit/1a528d945) bump to 0.12.2.0 (#1407)
 - [`b815a7b6a`](https://github.com/clowncrew/jokecoin/commit/b815a7b6a) Merge remote-tracking branch 'remotes/origin/master' into v0.12.2.x
-- [`7a5943c3a`](https://github.com/clowncrew/jokecoin/commit/7a5943c3a) Merge pull request #1431 from dashpay/v0.12.2.x-merge_upstream
+- [`7a5943c3a`](https://github.com/clowncrew/jokecoin/commit/7a5943c3a) Merge pull request #1431 from clowncrew/v0.12.2.x-merge_upstream
 - [`8bbcf6200`](https://github.com/clowncrew/jokecoin/commit/8bbcf6200) Fixed pow (test and algo) (#1415)
 - [`f3b92a95d`](https://github.com/clowncrew/jokecoin/commit/f3b92a95d) c++11: don't throw from the reverselock destructor (#1421)
 - [`b40f8f333`](https://github.com/clowncrew/jokecoin/commit/b40f8f333) Rename bitcoinconsensus library to dashconsensus. (#1432)

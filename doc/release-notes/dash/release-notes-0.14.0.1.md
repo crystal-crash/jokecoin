@@ -61,7 +61,7 @@ would happen.
 0.14.0.1 Change log
 ===================
 
-See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.14.0.0...dashpay:v0.14.0.1).
+See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.14.0.0...clowncrew:v0.14.0.1).
 
 - [`a2baa93ec`](https://github.com/clowncrew/jokecoin/commit/a2baa93ec) Only require valid collaterals for votes and triggers (#2947) (#2957)
 - [`b293e6dde`](https://github.com/clowncrew/jokecoin/commit/b293e6dde) Fix off-by-one error in InstantSend mining info removal when disconnecting blocks (#2951)
