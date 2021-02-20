@@ -111,7 +111,7 @@ public:
     void Stop() override {}
     void Close() override {}
 
-    // Jokecoin Specific WalletInitInterface InitPrivateSendSettings
+    // Dash Specific WalletInitInterface InitPrivateSendSettings
     void AutoLockMasternodeCollaterals() override {}
     void InitPrivateSendSettings() override {}
     void InitKeePass() override {}
