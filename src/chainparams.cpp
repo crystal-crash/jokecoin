@@ -376,7 +376,7 @@ public:
         nDefaultPort = 8999; // jokecoin 9999
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1613736000, 353943, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1613936460, 353943, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x0000043e73fcdef08797426e3f0ab6d895dc883bc628745db15a6842706ae10e"));
         assert(genesis.hashMerkleRoot == uint256S("0xfd99a4e7a54d74f8f1195a2c237df828376f441a46d77ce398d2ba0fda42c267"));
