@@ -216,7 +216,7 @@
 - [`c62c7ab6d`](https://github.com/clowncrew/jokecoin/commit/c62c7ab6d) Merge #10662: Initialize randomness in benchmarks
 - [`de1342791`](https://github.com/clowncrew/jokecoin/commit/de1342791) Merge #10314: Remove unused forward declaration for non-existent ScriptPubKeyToJSON(...)
 - [`f2dcac3a4`](https://github.com/clowncrew/jokecoin/commit/f2dcac3a4) Merge #10757: RPC: Introduce getblockstats to plot things (#3058)
-- [`51a4e11d6`](https://github.com/clowncrew/jokecoin/commit/51a4e11d6) dashify what made sense in fuzzing.md
+- [`51a4e11d6`](https://github.com/clowncrew/jokecoin/commit/51a4e11d6) jokecoinify what made sense in fuzzing.md
 - [`b1970add1`](https://github.com/clowncrew/jokecoin/commit/b1970add1) Code Review fixes
 - [`8cadbf622`](https://github.com/clowncrew/jokecoin/commit/8cadbf622) bitcoin -> jokecoin
 - [`122da986c`](https://github.com/clowncrew/jokecoin/commit/122da986c) Merge #10415: [tests] Speed up fuzzing by ~200x when using afl-fuzz
@@ -303,7 +303,7 @@
 - [`d97fd1ca7`](https://github.com/clowncrew/jokecoin/commit/d97fd1ca7) state that getinfo will be deprecated in a future version
 - [`d6633b5fb`](https://github.com/clowncrew/jokecoin/commit/d6633b5fb) apply rpcconsole.cpp patch
 - [`4a22fb78f`](https://github.com/clowncrew/jokecoin/commit/4a22fb78f) s/jokecoin-util-test.py/bitcoin-util-test.py
-- [`e0424c1a0`](https://github.com/clowncrew/jokecoin/commit/e0424c1a0) s/libbitcoin/libdash
+- [`e0424c1a0`](https://github.com/clowncrew/jokecoin/commit/e0424c1a0) s/libbitcoin/libjokecoin
 - [`316fa1859`](https://github.com/clowncrew/jokecoin/commit/316fa1859) s/bitcoind/jokecoind
 - [`f38ed3c71`](https://github.com/clowncrew/jokecoin/commit/f38ed3c71) #10821 continued
 - [`64c195a03`](https://github.com/clowncrew/jokecoin/commit/64c195a03) remove witness/segwit based text
@@ -380,8 +380,8 @@
 - [`a38648c91`](https://github.com/clowncrew/jokecoin/commit/a38648c91) Merge #12588: [Utils] Remove deprecated PyZMQ call from Python ZMQ example
 - [`b71a187da`](https://github.com/clowncrew/jokecoin/commit/b71a187da) Backport yet another part of 11824
 - [`2f8512b92`](https://github.com/clowncrew/jokecoin/commit/2f8512b92) Merge #11126: Acquire cs_main lock before cs_wallet during wallet initialization
-- [`bcef238d0`](https://github.com/clowncrew/jokecoin/commit/bcef238d0) dashify test/functional/README.md
-- [`2f5606358`](https://github.com/clowncrew/jokecoin/commit/2f5606358) dashify test/README.md
+- [`bcef238d0`](https://github.com/clowncrew/jokecoin/commit/bcef238d0) jokecoinify test/functional/README.md
+- [`2f5606358`](https://github.com/clowncrew/jokecoin/commit/2f5606358) jokecoinify test/README.md
 - [`7e866ed2d`](https://github.com/clowncrew/jokecoin/commit/7e866ed2d) don't use replace-by-fee.py as example
 - [`f4736b382`](https://github.com/clowncrew/jokecoin/commit/f4736b382) update seeds emplace_back based on code review
 - [`5ac5e66f3`](https://github.com/clowncrew/jokecoin/commit/5ac5e66f3) remove unneeded space wallet.cpp
@@ -704,7 +704,7 @@
 - [`2c833eff3`](https://github.com/clowncrew/jokecoin/commit/2c833eff3) Merge #10039: Fix compile errors with Qt 5.3.2 and Boost 1.55.0
 - [`a6eee07f2`](https://github.com/clowncrew/jokecoin/commit/a6eee07f2) Merge bitcoin#9963: util: Properly handle errors during log message formatting (#2917)
 - [`67c735b15`](https://github.com/clowncrew/jokecoin/commit/67c735b15) s/bitcoin-config.h/jokecoin-config.h/
-- [`2f63322cd`](https://github.com/clowncrew/jokecoin/commit/2f63322cd) dashify "Finding reviewers" section to be more relevant
+- [`2f63322cd`](https://github.com/clowncrew/jokecoin/commit/2f63322cd) jokecoinify "Finding reviewers" section to be more relevant
 - [`e7a21faa2`](https://github.com/clowncrew/jokecoin/commit/e7a21faa2) Merge Bitcoin#9960: Trivial: Add const modifier to GetHDChain and IsHDEnabled
 - [`eecc72436`](https://github.com/clowncrew/jokecoin/commit/eecc72436) Merge #10564: Return early in IsBanned.
 - [`742744f25`](https://github.com/clowncrew/jokecoin/commit/742744f25) Merge #10522: [wallet] Remove unused variables

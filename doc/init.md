@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 Service User
 ---------------------------------
 
-All three Linux startup configurations assume the existence of a "dashcore" user
+All three Linux startup configurations assume the existence of a "jokecoincore" user
 and group.  They must be created before attempting to use these scripts.
 The OS X configuration assumes jokecoind will be set up for the current user.
 
@@ -54,15 +54,15 @@ Paths
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              `/usr/bin/jokecoind`  
-Configuration file:  `/etc/dashcore/jokecoin.conf`  
+Configuration file:  `/etc/jokecoincore/jokecoin.conf`  
 Data directory:      `/var/lib/jokecoind`  
 PID file:            `/var/run/jokecoind/jokecoind.pid` (OpenRC and Upstart) or `/var/lib/jokecoind/jokecoind.pid` (systemd)  
 Lock file:           `/var/lock/subsys/jokecoind` (CentOS)  
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the dashcore user and group.  It is advised for security
+should all be owned by the jokecoincore user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-dashcore user and group.  Access to jokecoin-cli and other jokecoind rpc clients
+jokecoincore user and group.  Access to jokecoin-cli and other jokecoind rpc clients
 can then be controlled by group membership.
 
 ### Mac OS X
@@ -116,7 +116,7 @@ This Launch Agent will cause jokecoind to start whenever the user logs in.
 
 NOTE: This approach is intended for those wanting to run jokecoind as the current user.
 You will need to modify org.jokecoin.jokecoind.plist if you intend to use it as a
-Launch Daemon with a dedicated dashcore user.
+Launch Daemon with a dedicated jokecoincore user.
 
 Auto-respawn
 -----------------------------------

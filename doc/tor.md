@@ -49,7 +49,7 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. For newer
 versions of Tor see [Section 4](#4-automatically-listen-on-tor).*
 
-	HiddenServiceDir /var/lib/tor/dashcore-service/
+	HiddenServiceDir /var/lib/tor/jokecoincore-service/
 	HiddenServicePort 9999 127.0.0.1:9999
 	HiddenServicePort 19999 127.0.0.1:19999
 
@@ -59,7 +59,7 @@ your jokecoind's P2P listen port (9999 by default).
 	-externalip=X   You can tell Jokecoin Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/dashcore-service/hostname. Onion addresses are given
+	                /var/lib/tor/jokecoincore-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).

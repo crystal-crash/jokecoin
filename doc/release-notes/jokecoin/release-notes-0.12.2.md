@@ -318,7 +318,7 @@ Detailed [change log](https://github.com/clowncrew/jokecoin/compare/v0.12.1.x...
 - [`7a5943c3a`](https://github.com/clowncrew/jokecoin/commit/7a5943c3a) Merge pull request #1431 from clowncrew/v0.12.2.x-merge_upstream
 - [`8bbcf6200`](https://github.com/clowncrew/jokecoin/commit/8bbcf6200) Fixed pow (test and algo) (#1415)
 - [`f3b92a95d`](https://github.com/clowncrew/jokecoin/commit/f3b92a95d) c++11: don't throw from the reverselock destructor (#1421)
-- [`b40f8f333`](https://github.com/clowncrew/jokecoin/commit/b40f8f333) Rename bitcoinconsensus library to dashconsensus. (#1432)
+- [`b40f8f333`](https://github.com/clowncrew/jokecoin/commit/b40f8f333) Rename bitcoinconsensus library to jokecoinconsensus. (#1432)
 - [`28a1d0ecc`](https://github.com/clowncrew/jokecoin/commit/28a1d0ecc) Fix the same header included twice. (#1474)
 - [`adf97e12a`](https://github.com/clowncrew/jokecoin/commit/adf97e12a) fix travis ci mac build (#1483)
 - [`a28fa724c`](https://github.com/clowncrew/jokecoin/commit/a28fa724c) fix BIP34 starting blocks for mainnet/testnet (#1476)

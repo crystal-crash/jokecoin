@@ -301,7 +301,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and jokecoin: URIs)</source>
-        <translation>送金を要求 (QRコードとdash:URIを生成)</translation>
+        <translation>送金を要求 (QRコードとjokecoin:URIを生成)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>

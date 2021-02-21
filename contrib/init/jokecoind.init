@@ -26,11 +26,11 @@ lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/jokecoind}
 jokecoind=${BITCOIND_BIN-/usr/bin/jokecoind}
 
 # jokecoind opts default to -disablewallet, override with BITCOIND_OPTS
-dashd_opts=${BITCOIND_OPTS--disablewallet}
+jokecoind_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $jokecoind $dashd_opts
+    daemon $DAEMONOPTS $jokecoind $jokecoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

@@ -24,7 +24,7 @@ import time
 from test_framework.siphash import siphash256
 from test_framework.util import hex_str_to_bytes, bytes_to_hex_str, wait_until
 
-import dash_hash
+import jokecoin_hash
 
 MIN_VERSION_SUPPORTED = 60001
 MY_VERSION = 70214  # MIN_PEER_PROTO_VERSION
@@ -50,8 +50,8 @@ def sha256(s):
 def hash256(s):
     return sha256(sha256(s))
 
-def dashhash(s):
-    return dash_hash.getPoWHash(s)
+def jokecoinhash(s):
+    return jokecoin_hash.getPoWHash(s)
 
 def ser_compact_size(l):
     r = b""
@@ -483,8 +483,8 @@ class CBlockHeader():
             r += struct.pack("<I", self.nTime)
             r += struct.pack("<I", self.nBits)
             r += struct.pack("<I", self.nNonce)
-            self.sha256 = uint256_from_str(dashhash(r))
-            self.hash = encode(dashhash(r)[::-1], 'hex_codec').decode('ascii')
+            self.sha256 = uint256_from_str(jokecoinhash(r))
+            self.hash = encode(jokecoinhash(r)[::-1], 'hex_codec').decode('ascii')
 
     def rehash(self):
         self.sha256 = None

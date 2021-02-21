@@ -962,8 +962,8 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = gArgs.GetChainName();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "dashcore.desktop";
-    return GetAutostartDir() / strprintf("dashcore-%s.lnk", chain);
+        return GetAutostartDir() / "jokecoincore.desktop";
+    return GetAutostartDir() / strprintf("jokecoincore-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -1003,7 +1003,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = gArgs.GetChainName();
-        // Write a dashcore.desktop file to the autostart directory:
+        // Write a jokecoincore.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
@@ -1243,7 +1243,7 @@ void loadStyleSheet(QWidget* widget, bool fForceUpdate)
 
         std::vector<QString> vecFiles;
         // If light/dark theme is used load general styles first
-        if (dashThemeActive()) {
+        if (jokecoinThemeActive()) {
             vecFiles.push_back(pathToFile("general"));
         }
         vecFiles.push_back(pathToFile(getActiveTheme()));
@@ -1777,7 +1777,7 @@ QString getActiveTheme()
     return settings.value("theme", defaultTheme).toString();
 }
 
-bool dashThemeActive()
+bool jokecoinThemeActive()
 {
     QSettings settings;
     QString theme = settings.value("theme", "").toString();
@@ -1796,7 +1796,7 @@ void disableMacFocusRect(const QWidget* w)
 #ifdef Q_OS_MAC
     for (const auto& c : w->findChildren<QWidget*>()) {
         if (c->testAttribute(Qt::WA_MacShowFocusRect)) {
-            c->setAttribute(Qt::WA_MacShowFocusRect, !dashThemeActive());
+            c->setAttribute(Qt::WA_MacShowFocusRect, !jokecoinThemeActive());
             setRectsDisabled.emplace(c);
         }
     }
@@ -1810,7 +1810,7 @@ void updateMacFocusRects()
     auto it = setRectsDisabled.begin();
     while (it != setRectsDisabled.end()) {
         if (allWidgets.contains(*it)) {
-            (*it)->setAttribute(Qt::WA_MacShowFocusRect, !dashThemeActive());
+            (*it)->setAttribute(Qt::WA_MacShowFocusRect, !jokecoinThemeActive());
             ++it;
         } else {
             it = setRectsDisabled.erase(it);

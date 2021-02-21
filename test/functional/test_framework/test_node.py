@@ -252,7 +252,7 @@ class TestNodeCLI():
         self.binary = binary
         self.datadir = datadir
         self.input = None
-        self.log = logging.getLogger('TestFramework.dashcli')
+        self.log = logging.getLogger('TestFramework.jokecoincli')
 
     def __call__(self, *options, input=None):
         # TestNodeCLI is callable with jokecoin-cli command-line options

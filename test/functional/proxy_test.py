@@ -18,8 +18,8 @@ Test plan:
     - proxy on IPv6
 
 - Create various proxies (as threads)
-- Create dashds that connect to them
-- Manipulate the dashds using addnode (onetry) an observe effects
+- Create jokecoinds that connect to them
+- Manipulate the jokecoinds using addnode (onetry) an observe effects
 
 addnode connect to IPv4
 addnode connect to IPv6

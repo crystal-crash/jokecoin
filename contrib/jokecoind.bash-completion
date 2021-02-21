@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_dashd() {
+_jokecoind() {
     local cur prev words=() cword
     local jokecoind
 
@@ -45,7 +45,7 @@ _dashd() {
             ;;
     esac
 } &&
-complete -F _dashd jokecoind jokecoin-qt
+complete -F _jokecoind jokecoind jokecoin-qt
 
 # Local variables:
 # mode: shell-script

@@ -50,4 +50,4 @@ situations but should be discussed in public in advance.
 
 See also
 ----------
-- [jokecoin-seeder](https://github.com/nightlydash/jokecoin-seeder) is a reference implementation of a DNS seed.
+- [jokecoin-seeder](https://github.com/nightlyjokecoin/jokecoin-seeder) is a reference implementation of a DNS seed.

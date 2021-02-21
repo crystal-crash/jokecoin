@@ -37,7 +37,7 @@ Jokecoin Core is now available at `./src/jokecoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=dashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DashCore/jokecoin.conf"
+    echo -e "rpcuser=jokecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DashCore/jokecoin.conf"
 
     chmod 600 "/Users/${USER}/Library/Application Support/DashCore/jokecoin.conf"
 

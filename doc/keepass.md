@@ -31,22 +31,22 @@ The following rpc commands are available:
 
 ### How to setup
 
-Sample initialization flow from _dash-qt_ console (this needs to be done only once to set up the association):
+Sample initialization flow from _jokecoin-qt_ console (this needs to be done only once to set up the association):
 
  - Have KeePass running with an open database
- - Start _dash-qt_
+ - Start _jokecoin-qt_
  - Open console
  - Type "_keepass init_" in jokecoin-qt console
  - Keepass pops up and asks for an association id, fill that in, for example, "_mydrkwallet_"
- - You should get a response like this "_Association successful. Id: mydrkwalletdash - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
- - Edit _dash.conf_ and fill in these values
+ - You should get a response like this "_Association successful. Id: mydrkwalletjokecoin - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
+ - Edit _jokecoin.conf_ and fill in these values
 ```
 keepass=1
 keepasskey=AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=
 keepassid=mydrkwallet
 keepassname=testwallet
 ```
- - Restart _dash-qt_
+ - Restart _jokecoin-qt_
 
 At this point, the association is made. The next action depends on your particular situation:
 

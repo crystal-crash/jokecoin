@@ -587,7 +587,7 @@ int main(int argc, char *argv[])
 #endif
 
     Q_INIT_RESOURCE(jokecoin);
-    Q_INIT_RESOURCE(dash_locale);
+    Q_INIT_RESOURCE(jokecoin_locale);
 
 #if QT_VERSION > 0x050100
     // Generate high-dpi pixmaps

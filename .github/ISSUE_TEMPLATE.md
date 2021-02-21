@@ -4,7 +4,7 @@ This issue tracker is only for technical issues related to Jokecoin Core.
 
 General Jokecoin questions and/or support requests and are best directed to the [Clowncrew Reddit](https://www.reddit.com/r/clowncrew/).
 
-To report critical security issues, email infosec@jokecoin.org and/or see the JOKECOIN bug bounty program on [Bugcrowd](https://bugcrowd.com/dashdigitalcash) instead of creating Github issues.
+To report critical security issues, email infosec@jokecoin.org and/or see the JOKECOIN bug bounty program on [Bugcrowd](https://bugcrowd.com/jokecoindigitalcash) instead of creating Github issues.
 
 ### Describe the issue
 

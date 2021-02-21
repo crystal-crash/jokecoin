@@ -1194,7 +1194,7 @@ static UniValue getinfo_deprecated(const JSONRPCRequest& request)
         "- getblockchaininfo: blocks, difficulty, chain\n"
         "- getnetworkinfo: version, protocolversion, timeoffset, connections, proxy, relayfee, warnings\n"
         "- getwalletinfo: balance, privatesend_balance, keypoololdest, keypoolsize, paytxfee, unlocked_until, walletversion\n"
-        "\ndash-cli has the option -getinfo to collect and format these in the old format."
+        "\njokecoin-cli has the option -getinfo to collect and format these in the old format."
     );
 }
 

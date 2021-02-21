@@ -35,7 +35,7 @@ class CBaseMainParams : public CBaseChainParams
 public:
     CBaseMainParams()
     {
-        nRPCPort = 8998; // dash 9998
+        nRPCPort = 8998; // jokecoin 9998
     }
 };
 
@@ -47,7 +47,7 @@ class CBaseTestNetParams : public CBaseChainParams
 public:
     CBaseTestNetParams()
     {
-        nRPCPort = 18998; // dash 19998
+        nRPCPort = 18998; // jokecoin 19998
         strDataDir = "testnet3";
     }
 };
@@ -60,7 +60,7 @@ class CBaseDevNetParams : public CBaseChainParams
 public:
     CBaseDevNetParams(const std::string &dataDir)
     {
-        nRPCPort = 18798; // dash 19798
+        nRPCPort = 18798; // jokecoin 19798
         strDataDir = dataDir;
     }
 };
@@ -73,7 +73,7 @@ class CBaseRegTestParams : public CBaseChainParams
 public:
     CBaseRegTestParams()
     {
-        nRPCPort = 18898; // dash 19898
+        nRPCPort = 18898; // jokecoin 19898
         strDataDir = "regtest";
     }
 };

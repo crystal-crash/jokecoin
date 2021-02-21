@@ -84,9 +84,9 @@ class BitcoinTestFramework():
 
         parser = optparse.OptionParser(usage="%prog [options]")
         parser.add_option("--nocleanup", dest="nocleanup", default=False, action="store_true",
-                          help="Leave dashds and test.* datadir on exit or error")
+                          help="Leave jokecoinds and test.* datadir on exit or error")
         parser.add_option("--noshutdown", dest="noshutdown", default=False, action="store_true",
-                          help="Don't stop dashds after the test execution")
+                          help="Don't stop jokecoinds after the test execution")
         parser.add_option("--srcdir", dest="srcdir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../../../src"),
                           help="Source directory containing jokecoind/jokecoin-cli (default: %default)")
         parser.add_option("--cachedir", dest="cachedir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../../cache"),
@@ -106,7 +106,7 @@ class BitcoinTestFramework():
                           help="Attach a python debugger if test fails")
         parser.add_option("--usecli", dest="usecli", default=False, action="store_true",
                           help="use jokecoin-cli instead of RPC for all commands")
-        parser.add_option("--jokecoind-arg", dest="dashd_extra_args", default=[], type='string', action='append',
+        parser.add_option("--jokecoind-arg", dest="jokecoind_extra_args", default=[], type='string', action='append',
                           help="Pass extra args to all jokecoind instances")
         self.add_options(parser)
         (self.options, self.args) = parser.parse_args()
@@ -119,7 +119,7 @@ class BitcoinTestFramework():
 
         self.options.cachedir = os.path.abspath(self.options.cachedir)
 
-        self.extra_args_from_options = self.options.dashd_extra_args
+        self.extra_args_from_options = self.options.jokecoind_extra_args
 
         # Set up temp directory and start logging
         if self.options.tmpdir:
@@ -167,7 +167,7 @@ class BitcoinTestFramework():
         else:
             for node in self.nodes:
                 node.cleanup_on_exit = False
-            self.log.info("Note: dashds were not stopped and may still be running")
+            self.log.info("Note: jokecoinds were not stopped and may still be running")
 
         if not self.options.nocleanup and not self.options.noshutdown and success != TestStatus.FAILED:
             self.log.info("Cleaning up")
@@ -273,7 +273,7 @@ class BitcoinTestFramework():
             coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def start_nodes(self, extra_args=None, stderr=None, *args, **kwargs):
-        """Start multiple dashds"""
+        """Start multiple jokecoinds"""
 
         if extra_args is None:
             extra_args = [None] * self.num_nodes
@@ -442,7 +442,7 @@ class BitcoinTestFramework():
                 if os.path.isdir(get_datadir_path(self.options.cachedir, i)):
                     shutil.rmtree(get_datadir_path(self.options.cachedir, i))
 
-            # Create cache directories, run dashds:
+            # Create cache directories, run jokecoinds:
             self.set_genesis_mocktime()
             for i in range(MAX_NODES):
                 datadir = initialize_datadir(self.options.cachedir, i)
@@ -519,7 +519,7 @@ class MasternodeInfo:
 
 
 class DashTestFramework(BitcoinTestFramework):
-    def set_dash_test_params(self, num_nodes, masterodes_count, extra_args=None, fast_dip3_enforcement=False):
+    def set_jokecoin_test_params(self, num_nodes, masterodes_count, extra_args=None, fast_dip3_enforcement=False):
         self.mn_count = masterodes_count
         self.num_nodes = num_nodes
         self.mninfo = []
@@ -540,13 +540,13 @@ class DashTestFramework(BitcoinTestFramework):
         self.llmq_size = 3
         self.llmq_threshold = 2
 
-    def set_dash_dip8_activation(self, activate_after_block):
+    def set_jokecoin_dip8_activation(self, activate_after_block):
         window = int((activate_after_block + 2) / 3)
         threshold = int((window + 1) / 2)
         for i in range(0, self.num_nodes):
             self.extra_args[i].append("-vbparams=dip0008:0:999999999999:%d:%d" % (window, threshold))
 
-    def set_dash_llmq_test_params(self, llmq_size, llmq_threshold):
+    def set_jokecoin_llmq_test_params(self, llmq_size, llmq_threshold):
         self.llmq_size = llmq_size
         self.llmq_threshold = llmq_threshold
         for i in range(0, self.num_nodes):

@@ -10,11 +10,11 @@ src/jokecoin
 src/jokecoind
 src/jokecoin-cli
 src/jokecoin-tx
-src/test/test_dash
-src/test/test_dash_fuzzy
-src/qt/test/test_dash-qt
+src/test/test_jokecoin
+src/test/test_jokecoin_fuzzy
+src/qt/test/test_jokecoin-qt
 src/qt/res/css/colors/*
-src/bench/bench_dash
+src/bench/bench_jokecoin
 
 # autoreconf
 Makefile.in
@@ -103,7 +103,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_dash.coverage/
+test_jokecoin.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -121,7 +121,7 @@ test/cache/*
 .autotools
 /doc/doxygen/
 
-libdashconsensus.pc
+libjokecoinconsensus.pc
 contrib/devtools/split-debug.sh
 src/qt/jokecoin-qt.bash
 qa/pull-tester/tests-config.sh

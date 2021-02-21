@@ -2,7 +2,7 @@
 Construct a linear, no-fork, best version of the Jokecoin blockchain. The scripts
 run using Python 3 but are compatible with Python 2.
 
-## Step 0: Install dash_hash
+## Step 0: Install jokecoin_hash
 
 https://github.com/clowncrew/jokecoin_hash
 

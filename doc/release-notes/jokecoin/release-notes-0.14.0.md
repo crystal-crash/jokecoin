@@ -655,7 +655,7 @@ See detailed [set of changes](https://github.com/clowncrew/jokecoin/compare/v0.1
 - [`0648496e2`](https://github.com/clowncrew/jokecoin/commit/0648496e2) Fix flaky p2p-fullblocktest (#2605)
 - [`96d4f7459`](https://github.com/clowncrew/jokecoin/commit/96d4f7459) Try to fix flaky IX tests in DIP3 tests (#2602)
 - [`896733223`](https://github.com/clowncrew/jokecoin/commit/896733223) Dashify copyright_header.py (#2598)
-- [`c58f775cc`](https://github.com/clowncrew/jokecoin/commit/c58f775cc) De-dashify env vars and dashify help text in tests instead (#2603)
+- [`c58f775cc`](https://github.com/clowncrew/jokecoin/commit/c58f775cc) De-jokecoinify env vars and jokecoinify help text in tests instead (#2603)
 - [`a49f4123e`](https://github.com/clowncrew/jokecoin/commit/a49f4123e) Backports 0.15 pr1 (#2590)
 - [`f95aae2b3`](https://github.com/clowncrew/jokecoin/commit/f95aae2b3) Remove all legacy/compatibility MN code (#2600)
 - [`0e28f0aa9`](https://github.com/clowncrew/jokecoin/commit/0e28f0aa9) Fix flaky autoix tests by disabling autoix while filling mempool (#2595)

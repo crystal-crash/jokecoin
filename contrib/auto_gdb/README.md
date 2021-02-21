@@ -1,7 +1,7 @@
 # Contents
 This directory contains tools to automatically get data about the memory consumption by some objects in jokecoind process with the help of GDB debugger.
 
-## dash_dbg.sh
+## jokecoin_dbg.sh
 This shell script attaches GDB to the running jokecoind process (should be built with debug info), executes debug.gdb script and detaches.
 By default it uses testnet settings, see script comments to attach it to mainnet jokecoind.
 

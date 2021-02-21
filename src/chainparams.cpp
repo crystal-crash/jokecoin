@@ -68,7 +68,7 @@ static CBlock CreateDevNetGenesisBlock(const uint256 &prevBlockHash, const std::
  * transaction cannot be spent since it did not originally exist in the
  * database.
  *
- * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
+ * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1613736000, nBits=1e0ffff0, nNonce=28917698, vtx=1)
  *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
  *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
  *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
@@ -77,7 +77,7 @@ static CBlock CreateDevNetGenesisBlock(const uint256 &prevBlockHash, const std::
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "Senator Ted Cruz returns to Texas after traveling to Cancun amid winter weather crisis";
-    const CScript genesisOutputScript = CScript() << ParseHex("04ca38e3941996b44d2478ffa273f28747817ce348df4cc4befe407d553d519486c938f98c00ddc97f1c88efbd5f6572c7e3cde97726e2eb728ae012b56bc88df1") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -296,13 +296,13 @@ public:
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 15;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x0000036307866de3ad1db9b766840fef9494acc2eb1ebc126861896c44c05b9f");
+        consensus.BIP34Hash = uint256S("0x00000ba13ac11a4183415efd8c5f972b07ad07ac07a374eec3145a0518a01cc4");
         consensus.BIP65Height = 619382; // 00000000000076d8fcea02ec0963de4abfd01e771fec0863f960c2c64fe6f357
         consensus.BIP66Height = 245817; // 00000000000b1fa2dfa312863570e13fae9ca7b5566cb27e55422620b469aefa
         consensus.DIP0001Height = 782208;
         consensus.DIP0003Height = 1028160;
-        consensus.DIP0003EnforcementHeight = 0;
-        consensus.DIP0003EnforcementHash = uint256S("0000036307866de3ad1db9b766840fef9494acc2eb1ebc126861896c44c05b9f");
+        consensus.DIP0003EnforcementHeight = 1030000;
+        consensus.DIP0003EnforcementHash = uint256S("00000ba13ac11a4183415efd8c5f972b07ad07ac07a374eec3145a0518a01cc4");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Jokecoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Jokecoin: 2.5 minutes
@@ -359,10 +359,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nFalloffCoeff = 5; // this corresponds to 10 periods
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000036307866de3ad1db9b766840fef9494acc2eb1ebc126861896c44c05b9f"); // 0
+        consensus.nMinimumChainWork = uint256S("0x00"); // 0
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000036307866de3ad1db9b766840fef9494acc2eb1ebc126861896c44c05b9f"); // 0
+        consensus.defaultAssumeValid = uint256S("0x00"); // 0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -373,12 +373,12 @@ public:
         pchMessageStart[1] = 0x0c;
         pchMessageStart[2] = 0x6b;
         pchMessageStart[3] = 0xbd;
-        nDefaultPort = 8999; // dash 9999
+        nDefaultPort = 8999; // jokecoin 9999
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1390095618, 28917698, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1613736000, 437394, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000036307866de3ad1db9b766840fef9494acc2eb1ebc126861896c44c05b9f"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000ba13ac11a4183415efd8c5f972b07ad07ac07a374eec3145a0518a01cc4"));
         assert(genesis.hashMerkleRoot == uint256S("0xfd99a4e7a54d74f8f1195a2c237df828376f441a46d77ce398d2ba0fda42c267"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
@@ -387,7 +387,8 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
         //vSeeds.emplace_back("dnsseed.jokecoin.org");
-        //vSeeds.emplace_back("dnsseed.dashdot.io");
+        //vSeeds.emplace_back("dnsseed.jokecoindot.io");
+        vSeeds.clear();
 
         // Jokecoin addresses start with 'X'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
@@ -432,12 +433,12 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0x0000036307866de3ad1db9b766840fef9494acc2eb1ebc126861896c44c05b9f")},
+                {0, uint256S("0x00000ba13ac11a4183415efd8c5f972b07ad07ac07a374eec3145a0518a01cc4")},
             }
         };
 
         chainTxData = ChainTxData{
-            1613725200, // * UNIX timestamp of last known number of transactions (Block 1344000)
+            1613736000, // * UNIX timestamp of last known number of transactions (Block 0)
             0,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.3         // * estimated number of transactions per second after that timestamp
@@ -468,13 +469,13 @@ public:
         consensus.nGovernanceFilterElements = 500;
         consensus.nMasternodeMinimumConfirmations = 1;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x0000094dd93e9688109a0f4d7a3454d8fed92e50c017b992dd49fd7b1a613436");
+        consensus.BIP34Hash = uint256S("0x000008d6a572c1f60ef1b75238720fd294b4d48722010f426997dd3aa2a14c8f");
         consensus.BIP65Height = 2431; // 0000039cf01242c7f921dcb4806a5994bc003b48c1973ae0c89b67809c2bb2ab
         consensus.BIP66Height = 2075; // 0000002acdd29a14583540cb72e1c5cc83783560e38fa7081495d474fe1671f7
         consensus.DIP0001Height = 5500;
         consensus.DIP0003Height = 7000;
-        consensus.DIP0003EnforcementHeight = 0;
-        consensus.DIP0003EnforcementHash = uint256S("0x0000094dd93e9688109a0f4d7a3454d8fed92e50c017b992dd49fd7b1a613436");
+        consensus.DIP0003EnforcementHeight = 7000;
+        consensus.DIP0003EnforcementHash = uint256S("0x000008d6a572c1f60ef1b75238720fd294b4d48722010f426997dd3aa2a14c8f");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Jokecoin: 1 day
         consensus.nPowTargetSpacing = 2.5 * 60; // Jokecoin: 2.5 minutes
@@ -531,21 +532,21 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nFalloffCoeff = 5; // this corresponds to 10 periods
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000094dd93e9688109a0f4d7a3454d8fed92e50c017b992dd49fd7b1a613436"); // 0
+        consensus.nMinimumChainWork = uint256S("0x00"); // 0
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000094dd93e9688109a0f4d7a3454d8fed92e50c017b992dd49fd7b1a613436"); // 0
+        consensus.defaultAssumeValid = uint256S("0x00"); // 0
 
         pchMessageStart[0] = 0xce;
         pchMessageStart[1] = 0xe2;
         pchMessageStart[2] = 0xca;
         pchMessageStart[3] = 0xff;
-        nDefaultPort = 18999; // dash 19999
+        nDefaultPort = 18999; // jokecoin 19999
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1390666206UL, 3861367235UL, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1613736001UL, 283660UL, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000094dd93e9688109a0f4d7a3454d8fed92e50c017b992dd49fd7b1a613436"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000008d6a572c1f60ef1b75238720fd294b4d48722010f426997dd3aa2a14c8f"));
         assert(genesis.hashMerkleRoot == uint256S("0xfd99a4e7a54d74f8f1195a2c237df828376f441a46d77ce398d2ba0fda42c267"));
 
         vFixedSeeds.clear();
@@ -553,7 +554,7 @@ public:
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        //vSeeds.emplace_back("testnet-seed.dashdot.io"); // Just a static list of stable node(s), only supports x9
+        //vSeeds.emplace_back("testnet-seed.jokecoindot.io"); // Just a static list of stable node(s), only supports x9
 
         // Testnet Jokecoin addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
@@ -596,7 +597,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0x00000c26026d0815a7e2ce4fa270775f61403c040647ff2c3091f99e894a4618")},
+                {0, uint256S("0x000008d6a572c1f60ef1b75238720fd294b4d48722010f426997dd3aa2a14c8f")},
             }
         };
 
@@ -704,7 +705,7 @@ public:
         pchMessageStart[1] = 0xca;
         pchMessageStart[2] = 0xff;
         pchMessageStart[3] = 0xce;
-        nDefaultPort = 18799; // dash 19799
+        nDefaultPort = 18799; // jokecoin 19799
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1417713337, 1096447, 0x207fffff, 1, 50 * COIN);
@@ -717,7 +718,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("dashevo.org",  "devnet-seed.dashevo.org"));
+        //vSeeds.push_back(CDNSSeedData("jokecoinevo.org",  "devnet-seed.jokecoinevo.org"));
 
         // Testnet Jokecoin addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
@@ -850,12 +851,12 @@ public:
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;
-        nDefaultPort = 18899; // dash 19899
+        nDefaultPort = 18899; // jokecoin 19899
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1417713337, 1096447, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1613736002, 4, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x6e6e49801213503d436caa2d14d4194f54ba80891b5a1277016e688084390744"));
+        assert(consensus.hashGenesisBlock == uint256S("0x5e5251fe4635d788b1ed035d513bfe861ba521a0361b1658cb5976089c6e5de2"));
         assert(genesis.hashMerkleRoot == uint256S("0xfd99a4e7a54d74f8f1195a2c237df828376f441a46d77ce398d2ba0fda42c267"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
@@ -883,7 +884,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e")},
+                {0, uint256S("0x5e5251fe4635d788b1ed035d513bfe861ba521a0361b1658cb5976089c6e5de2")},
             }
         };
 

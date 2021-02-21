@@ -28,7 +28,7 @@ Drag Jokecoin-Qt to your applications folder, and then run Jokecoin-Qt.
 for help and more information.
 * See the [Jokecoin Developer Documentation](https://jokecoin-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [Jokecoin Nation Discord](http://dashchat.org)
+* Ask for help on [Jokecoin Nation Discord](http://jokecoinchat.org)
 * Ask for help on the [Jokecoin Forum](https://jokecoin.org/forum)
 
 Building
@@ -60,7 +60,7 @@ The Jokecoin Core repo's [root README](/README.md) contains relevant information
 
 ### Resources
 * Discuss on the [Jokecoin Forum](https://jokecoin.org/forum), in the Development & Technical Discussion board.
-* Discuss on [Jokecoin Nation Discord](http://dashchat.org)
+* Discuss on [Jokecoin Nation Discord](http://jokecoinchat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

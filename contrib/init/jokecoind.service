@@ -13,9 +13,9 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/jokecoind -daemon -conf=/etc/jokecoin/jokecoin.conf -pid=/run/jokecoind/jokecoind.pid
-# Creates /run/jokecoin owned by dashcore
+# Creates /run/jokecoin owned by jokecoincore
 RuntimeDirectory=jokecoind
-User=dashcore
+User=jokecoincore
 Type=forking
 PIDFile=/run/jokecoind/jokecoind.pid
 Restart=on-failure

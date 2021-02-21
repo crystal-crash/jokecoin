@@ -2,18 +2,18 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/dashcore/.dashcore" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/dashcore/.dashcore"
+if [ -d "/var/lib/jokecoincore/.jokecoincore" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/jokecoincore/.jokecoincore"
 else
 	BITCOIND_DEFAULT_DATADIR="/var/lib/jokecoind"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/dashcore/jokecoin.conf}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/jokecoincore/jokecoin.conf}
 BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/jokecoind}
 BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/jokecoind.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-dashcore}}
-BITCOIND_GROUP=${BITCOIND_GROUP:-dashcore}
+BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-jokecoincore}}
+BITCOIND_GROUP=${BITCOIND_GROUP:-jokecoincore}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/jokecoind}
 BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
 BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
