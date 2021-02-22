@@ -44,6 +44,8 @@ namespace GUIUtil
         UNCONFIRMED,
         /* Theme related blue color */
         BLUE,
+        /* Theme related purple color */
+        PURPLE,
         /* Eye-friendly orange color */
         ORANGE,
         /* Eye-friendly red color, e.g. Transaction list -- negative amount */
@@ -91,11 +93,11 @@ namespace GUIUtil
 
     /** Helper to get an icon colorized with the given color (replaces black) and colorAlternative (replaces white)  */
     QIcon getIcon(const QString& strIcon, ThemedColor color, ThemedColor colorAlternative, const QString& strIconPath = ICONS_PATH);
-    QIcon getIcon(const QString& strIcon, ThemedColor color = ThemedColor::BLUE, const QString& strIconPath = ICONS_PATH);
+    QIcon getIcon(const QString& strIcon, ThemedColor color = ThemedColor::PURPLE, const QString& strIconPath = ICONS_PATH);
 
     /** Helper to set an icon for a button with the given color (replaces black) and colorAlternative (replaces white). */
     void setIcon(QAbstractButton* button, const QString& strIcon, ThemedColor color, ThemedColor colorAlternative, const QSize& size);
-    void setIcon(QAbstractButton* button, const QString& strIcon, ThemedColor color = ThemedColor::BLUE, const QSize& size = QSize(BUTTON_ICONSIZE, BUTTON_ICONSIZE));
+    void setIcon(QAbstractButton* button, const QString& strIcon, ThemedColor color = ThemedColor::PURPLE, const QSize& size = QSize(BUTTON_ICONSIZE, BUTTON_ICONSIZE));
 
     // Create human-readable string from date
     QString dateTimeStr(const QDateTime &datetime);
