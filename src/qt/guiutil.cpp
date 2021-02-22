@@ -172,7 +172,7 @@ static const std::map<ThemedColor, QColor> themedDarkColors = {
     { ThemedColor::DEFAULT, QColor(199, 199, 199) },
     { ThemedColor::UNCONFIRMED, QColor(170, 170, 170) },
     { ThemedColor::BLUE, QColor(0, 89, 154) },
-    { ThemedCOlor::PURPLE, QColor(102, 0, 204 )},
+    { ThemedColor::PURPLE, QColor(102, 0, 204 )},
     { ThemedColor::ORANGE, QColor(199, 147, 4) },
     { ThemedColor::RED, QColor(168, 72, 50) },
     { ThemedColor::GREEN, QColor(94, 140, 65) },
