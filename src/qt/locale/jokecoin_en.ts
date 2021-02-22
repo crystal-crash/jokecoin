@@ -396,13 +396,13 @@
     <name>BitcoinGUI</name>
     <message>
         <location filename="../jokecoin.cpp" line="+556"/>
-        <source>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="+1355"/>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <location line="-1210"/>
@@ -476,8 +476,8 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Jokecoin Core</source>
-        <translation>Show information about Jokecoin Core</translation>
+        <source>Show information about JokeCoin Core</source>
+        <translation>Show information about JokeCoin Core</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1813,8 +1813,8 @@
     </message>
     <message>
         <location line="+42"/>
-        <source>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -6441,8 +6441,8 @@ https://www.transifex.com/projects/p/jokecoin/</translation>
     </message>
     <message>
         <location line="-533"/>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <location line="+1"/>

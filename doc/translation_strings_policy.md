@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the Jokecoin Core software.
+This document provides guidelines for internationalization of the JokeCoin Core software.
 
 How to translate?
 ------------------

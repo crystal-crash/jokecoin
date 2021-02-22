@@ -37,7 +37,7 @@ Description: peer-to-peer network based digital currency - daemon
  Jokecoin is an experimental new digital currency that enables instant, private
  payments to anyone, anywhere in the world. Jokecoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Jokecoin Core
+ and issuing money are carried out collectively by the network. JokeCoin Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides the daemon, jokecoind, and the CLI tool
@@ -50,7 +50,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Jokecoin is an experimental new digital currency that enables instant, private
  payments to anyone, anywhere in the world. Jokecoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Jokecoin Core
+ and issuing money are carried out collectively by the network. JokeCoin Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides Jokecoin-Qt, a GUI for Jokecoin based on Qt.
@@ -62,7 +62,7 @@ Description: peer-to-peer digital currency - standalone transaction tool
  Jokecoin is an experimental new digital currency that enables instant, private
  payments to anyone, anywhere in the world. Jokecoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Jokecoin Core
+ and issuing money are carried out collectively by the network. JokeCoin Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides jokecoin-tx, a command-line transaction creation

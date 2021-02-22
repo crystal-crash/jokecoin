@@ -264,12 +264,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. Jokecoin Core nu mai poate continua în siguranță și se va opri.</translation>
+        <source>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. JokeCoin Core nu mai poate continua în siguranță și se va opri.</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -328,8 +328,8 @@
         <translation>Închide aplicaţia</translation>
     </message>
     <message>
-        <source>Show information about Jokecoin Core</source>
-        <translation>Arată informații despre Jokecoin Core</translation>
+        <source>Show information about JokeCoin Core</source>
+        <translation>Arată informații despre JokeCoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1321,8 +1321,8 @@
         <translation>Obiectiv Sold TrimitePrivat:</translation>
     </message>
     <message>
-        <source>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul client Jokecoin Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
+        <source>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul client JokeCoin Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
     </message>
     <message>
         <source>Connect to the Jokecoin network through a SOCKS5 proxy.</source>
@@ -4591,8 +4591,8 @@ https://www.transifex.com/projects/p/jokecoin/</translation>
         <translation>Opțiuni server RPC:</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

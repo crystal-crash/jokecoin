@@ -308,12 +308,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</source>
-        <translation>Er heeft zich een fatale fout voorgedaan. Jokecoin Core kan niet veilig worden voortgezet en zal worden afgesloten.</translation>
+        <source>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</source>
+        <translation>Er heeft zich een fatale fout voorgedaan. JokeCoin Core kan niet veilig worden voortgezet en zal worden afgesloten.</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -372,8 +372,8 @@
         <translation>Sluit applicatie</translation>
     </message>
     <message>
-        <source>Show information about Jokecoin Core</source>
-        <translation>Toon informatie over Jokecoin Core</translation>
+        <source>Show information about JokeCoin Core</source>
+        <translation>Toon informatie over JokeCoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1414,7 +1414,7 @@ Dit heeft ook invloed op de manier waarop uw saldo wordt berekend.</translation>
         <translation>Target PrivateSend Saldo</translation>
     </message>
     <message>
-        <source>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Open automatisch de Jokecoin client poort op de router. Dit werkt alleen als uw router UPnP ondersteunt en dit is ingeschakeld.</translation>
     </message>
     <message>
@@ -4978,8 +4978,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het Jokecoin ne
         <translation>RPC-serveropties:</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

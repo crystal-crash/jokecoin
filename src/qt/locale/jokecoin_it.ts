@@ -308,12 +308,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</source>
-        <translation>Si è verificato un errore irreversibile. Jokecoin Core non può più continuare in sicurezza e terminerà le operazioni.</translation>
+        <source>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</source>
+        <translation>Si è verificato un errore irreversibile. JokeCoin Core non può più continuare in sicurezza e terminerà le operazioni.</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -372,8 +372,8 @@
         <translation>Chiudi applicazione</translation>
     </message>
     <message>
-        <source>Show information about Jokecoin Core</source>
-        <translation>Mostra le informazioni su Jokecoin Core</translation>
+        <source>Show information about JokeCoin Core</source>
+        <translation>Mostra le informazioni su JokeCoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1413,8 +1413,8 @@
         <translation>Saldo target PrivateSend</translation>
     </message>
     <message>
-        <source>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Apri automaticamente la porta utilizzata dal client Jokecoin Core nel router. Funziona solo se il router supporta UPnP ed è attivato.</translation>
+        <source>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Apri automaticamente la porta utilizzata dal client JokeCoin Core nel router. Funziona solo se il router supporta UPnP ed è attivato.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4976,8 +4976,8 @@ https://www.transifex.com/projects/p/jokecoin/</translation>
         <translation>Opzioni server RPC:</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

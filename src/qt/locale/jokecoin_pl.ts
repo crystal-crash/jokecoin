@@ -308,12 +308,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</source>
-        <translation>Wystąpił błąd krytyczny. Jokecoin Core nie może bezpiecznie kontynuować i zostanie zamknięty.</translation>
+        <source>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</source>
+        <translation>Wystąpił błąd krytyczny. JokeCoin Core nie może bezpiecznie kontynuować i zostanie zamknięty.</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -372,8 +372,8 @@
         <translation>Zamknij program</translation>
     </message>
     <message>
-        <source>Show information about Jokecoin Core</source>
-        <translation>Pokaż informacje o Jokecoin Core</translation>
+        <source>Show information about JokeCoin Core</source>
+        <translation>Pokaż informacje o JokeCoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1409,8 +1409,8 @@
         <translation>Celem jest bilans PrivateSend</translation>
     </message>
     <message>
-        <source>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie otwórz port klienta Jokecoin Core na ruterze. Opcja działa jedynie, jeżeli router obsługuje UPnP i funkcja UPnP jest włączona.</translation>
+        <source>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwórz port klienta JokeCoin Core na ruterze. Opcja działa jedynie, jeżeli router obsługuje UPnP i funkcja UPnP jest włączona.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -1555,7 +1555,7 @@
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
 https://www.transifex.com/projects/p/jokecoin/</source>
-        <translation>Jokecoin Core nie został przetłumaczony na Twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
+        <translation>JokeCoin Core nie został przetłumaczony na Twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
 https://www.transifex.com/projects/p/jokecoin/</translation>
     </message>
     <message>
@@ -4963,8 +4963,8 @@ https://www.transifex.com/projects/p/jokecoin/</translation>
         <translation>Opcje serwera RPC:</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

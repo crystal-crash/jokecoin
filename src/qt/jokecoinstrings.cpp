@@ -9,7 +9,7 @@
 #define UNUSED
 #endif
 static const char UNUSED *jokecoin_strings[] = {
-QT_TRANSLATE_NOOP("jokecoin-core", "Jokecoin Core"),
+QT_TRANSLATE_NOOP("jokecoin-core", "JokeCoin Core"),
 QT_TRANSLATE_NOOP("jokecoin-core", "The %s developers"),
 QT_TRANSLATE_NOOP("jokecoin-core", ""
 "%s file contains all private keys from this wallet. Do not share it with "

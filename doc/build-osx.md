@@ -33,7 +33,7 @@ Follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-Jokecoin Core is now available at `./src/jokecoind`
+JokeCoin Core is now available at `./src/jokecoind`
 
 Before running, it's recommended you create an RPC configuration file.
 

@@ -2003,7 +2003,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Jokecoin Core " + FormatFullVersion();
+        std::string strDesc = "JokeCoin Core " + FormatFullVersion();
 
         try {
             while (true) {

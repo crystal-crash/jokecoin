@@ -264,12 +264,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</source>
-        <translation>重大なエラーが発生しました。 Jokecoin Coreは安全に続行できなくなり終了します。</translation>
+        <source>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</source>
+        <translation>重大なエラーが発生しました。 JokeCoin Coreは安全に続行できなくなり終了します。</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -328,8 +328,8 @@
         <translation>アプリケーションを終了</translation>
     </message>
     <message>
-        <source>Show information about Jokecoin Core</source>
-        <translation>Jokecoin Coreについての情報を表示</translation>
+        <source>Show information about JokeCoin Core</source>
+        <translation>JokeCoin Coreについての情報を表示</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1270,7 +1270,7 @@
         <translation>この設定は閾値として機能し、この量に達するとプライベートセンドが無効になります。</translation>
     </message>
     <message>
-        <source>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動的にルーターのDash Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
     </message>
     <message>
@@ -4460,7 +4460,7 @@ https://www.transifex.com/projects/p/jokecoin/</translation>
         <translation>RPCサーバのオプション：</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
+        <source>JokeCoin Core</source>
         <translation>Dashコア</translation>
     </message>
     <message>

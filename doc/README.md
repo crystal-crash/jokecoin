@@ -1,7 +1,7 @@
-Jokecoin Core
+JokeCoin Core
 ==========
 
-This is the official reference wallet for Jokecoin digital currency and comprises the backbone of the Jokecoin peer-to-peer network. You can [download Jokecoin Core](https://www.jokecoin.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Jokecoin digital currency and comprises the backbone of the Jokecoin peer-to-peer network. You can [download JokeCoin Core](https://www.jokecoin.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -33,7 +33,7 @@ for technical specifications and implementation details.
 
 Building
 ---------------------
-The following are developer notes on how to build Jokecoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build JokeCoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -43,7 +43,7 @@ The following are developer notes on how to build Jokecoin Core on your native p
 
 Development
 ---------------------
-The Jokecoin Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The JokeCoin Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
@@ -76,3 +76,4 @@ License
 Distributed under the [MIT software license](/COPYING).
 This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.
+JokeCoin Logo contains "Jester Hat" image (c) by Madeleine Bennett (CCBY).

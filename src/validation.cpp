@@ -59,7 +59,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Jokecoin Core cannot be compiled without assertions."
+# error "JokeCoin Core cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001

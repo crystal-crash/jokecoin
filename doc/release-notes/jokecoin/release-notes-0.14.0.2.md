@@ -1,4 +1,4 @@
-Jokecoin Core version 0.14.0.2
+JokeCoin Core version 0.14.0.2
 ==========================
 
 Release is now available from:
@@ -101,12 +101,12 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Jokecoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+JokeCoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
 Darkcoin was rebranded to Jokecoin.
 
-Jokecoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+JokeCoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Jokecoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+JokeCoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 

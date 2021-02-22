@@ -1,4 +1,4 @@
-Jokecoin Core version 0.16.1.0
+JokeCoin Core version 0.16.1.0
 ==========================
 
 Release is now available from:
@@ -27,7 +27,7 @@ or -reindex) to make sure your wallet has all the new data synced. Upgrading
 from version 0.13 should not require any additional actions.
 
 When upgrading from a version prior to 0.14.0.3, the
-first startup of Jokecoin Core will run a migration process which can take a few
+first startup of JokeCoin Core will run a migration process which can take a few
 minutes to finish. After the migration, a downgrade to an older version is only
 possible with a reindex (or reindex-chainstate).
 
@@ -63,7 +63,7 @@ This happened for users upgrading from versions prior to v0.14.
 - Opening or closing the settings while the application was in full-screen/maximized
 window mode lead to fragmented GUI layouts.
 - There was an unexpected checkmark in the "Encrypt wallet" menu item on Linux and Windows
-- Starting Jokecoin Core compiled without wallet support or with `-disablewallet` command line
+- Starting JokeCoin Core compiled without wallet support or with `-disablewallet` command line
 parameter lead to an application crash.
 
 RPC changes
@@ -117,12 +117,12 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Jokecoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+JokeCoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
 Darkcoin was rebranded to Jokecoin.
 
-Jokecoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+JokeCoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Jokecoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+JokeCoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 

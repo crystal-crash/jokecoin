@@ -308,12 +308,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Jokecoin Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. JokeCoin Core can no longer continue safely and will quit.</source>
         <translation>Une erreur fatale est survenue. Jokecoin ne peut plus continuer de façon sûre et va s'arrêter.</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -372,8 +372,8 @@
         <translation>Quitter l’application</translation>
     </message>
     <message>
-        <source>Show information about Jokecoin Core</source>
-        <translation>Affichez des informations à propos de  Jokecoin Core</translation>
+        <source>Show information about JokeCoin Core</source>
+        <translation>Affichez des informations à propos de  JokeCoin Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1413,8 +1413,8 @@
         <translation>Solde cible PrivateSend</translation>
     </message>
     <message>
-        <source>Automatically open the Jokecoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client Jokecoin Core sur le routeur. Cela ne fonctionne que si votre routeur supporte UPnP et est activé.</translation>
+        <source>Automatically open the JokeCoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client JokeCoin Core sur le routeur. Cela ne fonctionne que si votre routeur supporte UPnP et est activé.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4975,8 +4975,8 @@ https://www.transifex.com/projects/p/jokecoin/</translation>
         <translation>Options du serveur RPC :</translation>
     </message>
     <message>
-        <source>Jokecoin Core</source>
-        <translation>Jokecoin Core</translation>
+        <source>JokeCoin Core</source>
+        <translation>JokeCoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

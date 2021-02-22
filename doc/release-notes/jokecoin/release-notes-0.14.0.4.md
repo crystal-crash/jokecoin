@@ -1,4 +1,4 @@
-Jokecoin Core version 0.14.0.4
+JokeCoin Core version 0.14.0.4
 ==========================
 
 Release is now available from:
@@ -27,7 +27,7 @@ or -reindex) to make sure your wallet has all the new data synced. Upgrading fro
 version 0.13 should not require any additional actions.
 
 When upgrading from a version prior to 0.14.0.3, the
-first startup of Jokecoin Core will run a migration process which can take a few minutes
+first startup of JokeCoin Core will run a migration process which can take a few minutes
 to finish. After the migration, a downgrade to an older version is only possible with
 a reindex (or reindex-chainstate).
 
@@ -46,9 +46,9 @@ Notable changes
 Fix respends of freshly received InstantSend transactions
 ---------------------------------------------------------
 
-A bug in Jokecoin Core caused respends to not work before a received InstantSend transaction was confirmed in at least
+A bug in JokeCoin Core caused respends to not work before a received InstantSend transaction was confirmed in at least
 one block. This is fixed in this release, so that InstantSend locked mempool transactions can be
-respent immediately in Jokecoin Core (other wallets were not affected).
+respent immediately in JokeCoin Core (other wallets were not affected).
 
 Deprecation of SPORK_16_INSTANTSEND_AUTOLOCKS
 ---------------------------------------------
@@ -88,7 +88,7 @@ Fix for CVE-2017-18350
 ----------------------
 
 Bitcoin silently implemented a hidden fix for [CVE-2017-18350](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-November/017453.html).
-in Bitcoin v0.15.1. This release of Jokecoin Core includes a backport of this fix.
+in Bitcoin v0.15.1. This release of JokeCoin Core includes a backport of this fix.
 
 
 0.14.0.4 Change log
@@ -143,12 +143,12 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Jokecoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+JokeCoin Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
 Darkcoin was rebranded to Jokecoin.
 
-Jokecoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+JokeCoin Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Jokecoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+JokeCoin Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 

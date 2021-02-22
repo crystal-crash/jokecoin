@@ -56,7 +56,7 @@
 #include <llmq/quorums_signing_shares.h>
 
 #if defined(NDEBUG)
-# error "Jokecoin Core cannot be compiled without assertions."
+# error "JokeCoin Core cannot be compiled without assertions."
 #endif
 
 /** Maximum number of in-flight objects from a peer */
