@@ -903,7 +903,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.jokecoincore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "DashCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "JokeCoinCore";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -913,7 +913,7 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/DashCore";
+    return pathRet / "Library/Application Support/JokeCoinCore";
 #else
     // Unix
     return pathRet / ".jokecoincore";
