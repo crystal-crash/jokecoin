@@ -4,13 +4,13 @@ JokeCoin Core staging tree 0.16
 Status
 ------
 
-Network: Functional
-Sending/receiving: Functional
-JokerNodes: WIP
-PrivateSend: WIP (depends on JokerNodes)
-Block Explorer: WIP
-Mining pool: WIP
-Website: WIP (eventually https://www.jokecoin.net)
+* Network: Functional
+* Sending/receiving: Functional
+* JokerNodes: WIP
+* PrivateSend: WIP (depends on JokerNodes)
+* Block Explorer: WIP
+* Mining pool: WIP
+* Website: WIP (eventually https://www.jokecoin.net)
 
 
 What is Jokecoin?
