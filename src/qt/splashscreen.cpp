@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/dash-config.h>
+#include <config/jokecoin-config.h>
 #endif
 
 #include <qt/splashscreen.h>
@@ -64,7 +64,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
 
     // Adjust logo color based on the current theme
     QImage imgLogo = pixmapLogo.toImage().convertToFormat(QImage::Format_ARGB32);
-    QColor logoColor = GUIUtil::getThemedQColor(GUIUtil::ThemedColor::BLUE);
+    QColor logoColor = GUIUtil::getThemedQColor(GUIUtil::ThemedColor::PURPLE);
     for (int x = 0; x < imgLogo.width(); ++x) {
         for (int y = 0; y < imgLogo.height(); ++y) {
             const QRgb rgb = imgLogo.pixel(x, y);

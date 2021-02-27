@@ -1,0 +1,25 @@
+# It is not recommended to modify this file in-place, because it will
+# be overwritten during package upgrades. If you want to add further
+# options or overwrite existing ones then use
+# $ systemctl edit jokecoind.service
+# See "man systemd.service" for details.
+
+# Note that almost all daemon options could be specified in
+# /etc/jokecoin/jokecoin.conf
+
+[Unit]
+Description=Jokecoin daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/jokecoind -daemon -conf=/etc/jokecoin/jokecoin.conf -pid=/run/jokecoind/jokecoind.pid
+# Creates /run/jokecoin owned by jokecoincore
+RuntimeDirectory=jokecoind
+User=jokecoincore
+Type=forking
+PIDFile=/run/jokecoind/jokecoind.pid
+Restart=on-failure
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

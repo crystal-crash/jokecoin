@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: dashd.service
-Upstart: dashd.conf
-OpenRC:  dashd.openrc
-         dashd.openrcconf
-CentOS:  dashd.init
-OS X:    org.dash.dashd.plist
+SystemD: jokecoind.service
+Upstart: jokecoind.conf
+OpenRC:  jokecoind.openrc
+         jokecoind.openrcconf
+CentOS:  jokecoind.init
+OS X:    org.jokecoin.jokecoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

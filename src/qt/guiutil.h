@@ -32,7 +32,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the Dash Qt UI.
+/** Utility functions used by the Jokecoin Qt UI.
  */
 namespace GUIUtil
 {
@@ -44,6 +44,8 @@ namespace GUIUtil
         UNCONFIRMED,
         /* Theme related blue color */
         BLUE,
+        /* Theme related purple color */
+        PURPLE,
         /* Eye-friendly orange color */
         ORANGE,
         /* Eye-friendly red color, e.g. Transaction list -- negative amount */
@@ -91,11 +93,11 @@ namespace GUIUtil
 
     /** Helper to get an icon colorized with the given color (replaces black) and colorAlternative (replaces white)  */
     QIcon getIcon(const QString& strIcon, ThemedColor color, ThemedColor colorAlternative, const QString& strIconPath = ICONS_PATH);
-    QIcon getIcon(const QString& strIcon, ThemedColor color = ThemedColor::BLUE, const QString& strIconPath = ICONS_PATH);
+    QIcon getIcon(const QString& strIcon, ThemedColor color = ThemedColor::PURPLE, const QString& strIconPath = ICONS_PATH);
 
     /** Helper to set an icon for a button with the given color (replaces black) and colorAlternative (replaces white). */
     void setIcon(QAbstractButton* button, const QString& strIcon, ThemedColor color, ThemedColor colorAlternative, const QSize& size);
-    void setIcon(QAbstractButton* button, const QString& strIcon, ThemedColor color = ThemedColor::BLUE, const QSize& size = QSize(BUTTON_ICONSIZE, BUTTON_ICONSIZE));
+    void setIcon(QAbstractButton* button, const QString& strIcon, ThemedColor color = ThemedColor::PURPLE, const QSize& size = QSize(BUTTON_ICONSIZE, BUTTON_ICONSIZE));
 
     // Create human-readable string from date
     QString dateTimeStr(const QDateTime &datetime);
@@ -108,7 +110,7 @@ namespace GUIUtil
     // Setup appearance settings if not done yet
     void setupAppearance(QWidget* parent, OptionsModel* model);
 
-    // Parse "dash:" URI into recipient object, return true on successful parsing
+    // Parse "jokecoin:" URI into recipient object, return true on successful parsing
     bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
     bool validateBitcoinURI(const QString& uri);
@@ -181,7 +183,7 @@ namespace GUIUtil
     // Open debug.log
     void openDebugLogfile();
 	
-    // Open dash.conf
+    // Open jokecoin.conf
     void openConfigfile();	
 
     // Browse backup folder
@@ -320,7 +322,7 @@ namespace GUIUtil
     /** get font size with GUIUtil::fontScale applied */
     double getScaledFontSize(int nSize);
 
-    /** Load dash specific appliciation fonts */
+    /** Load jokecoin specific appliciation fonts */
     bool loadFonts();
 
     /** Set an application wide default font, depends on the selected theme */
@@ -356,8 +358,8 @@ namespace GUIUtil
     /** Return the name of the currently active theme.*/
     QString getActiveTheme();
 
-    /** Check if a dash specific theme is activated (light/dark).*/
-    bool dashThemeActive();
+    /** Check if a jokecoin specific theme is activated (light/dark).*/
+    bool jokecoinThemeActive();
 
     /** Load the theme and update all UI elements according to the appearance settings. */
     void loadTheme(QWidget* widget = nullptr, bool fForce = false);
